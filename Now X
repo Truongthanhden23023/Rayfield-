@@ -62,6 +62,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/f
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Quay tay set roblox",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+   end,
+})
+
 local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "W Azure",
@@ -94,8 +102,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Blue-X-Hub/refs/heads/main/.github/workflows/Bluexhub"))()
    end,
 })
-
-Tab:CreateLabel("Farm Fruit Blox Fruit")
+local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
    Name = "Zenith Hub Fruit Farm",
@@ -105,7 +112,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Z
    end,
 })
 
-Tab:CreateLabel("Pet Go")
+local Tab = Window:CreateTab("Pet Go", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
    Name = "Speed X Hub",
