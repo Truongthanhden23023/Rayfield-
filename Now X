@@ -35,6 +35,9 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+
+
 local Button = Tab:CreateButton({
    Name = "IY",
    Callback = function()
@@ -91,6 +94,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Blue-X-Hub/refs/heads/main/.github/workflows/Bluexhub"))()
    end,
 })
+
 Tab:CreateLabel("Farm Fruit Blox Fruit")
 
 local Button = Tab:CreateButton({
@@ -102,6 +106,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Z
 })
 
 Tab:CreateLabel("Pet Go")
+
 local Button = Tab:CreateButton({
    Name = "Speed X Hub",
    Callback = function()
@@ -109,3 +114,6 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
 })
+
+
+Rayfield:LoadConfiguration()
