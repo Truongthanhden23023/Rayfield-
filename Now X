@@ -125,10 +125,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/
 local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "DOORS FFJ HUB",
+   Name = "Rael Hub",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet('https://rawscripts.net/raw/DOORS-FFJ-Hub-11365'))()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
    end,
 })
 
