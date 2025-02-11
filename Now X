@@ -122,5 +122,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/
    end,
 })
 
+local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "mspaint v3",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+   end,
+})
 
 Rayfield:LoadConfiguration()
