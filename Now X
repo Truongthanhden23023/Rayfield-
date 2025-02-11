@@ -49,7 +49,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Shader",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Rtx/refs/heads/main/rtxrobloxmobile.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Rtx/refs/heads/main/rtxrobloxmobile"))()
    -- The function that takes place when the button is pressed
    end,
 })
