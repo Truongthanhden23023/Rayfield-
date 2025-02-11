@@ -42,11 +42,61 @@ local Button = Tab:CreateButton({
    -- The function that takes place when the button is pressed
    end,
 })
-local Tab = Window:CreateTab("Main2", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "Shader",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Rtx/refs/heads/main/rtxrobloxmobile.lua"))()
    -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Giảm Đồ Họa",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fixlag/refs/heads/main/Fixlag"))()
+   end,
+})
+local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "W Azure",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Wazure/refs/heads/main/Wazure"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "HOHO HUB V4",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/hohohub/refs/heads/main/Hoho%20hub"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "ATTACK HUB",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Attackhub/refs/heads/main/Attackhub"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Blue X Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Blue-X-Hub/refs/heads/main/.github/workflows/Bluexhub"))()
+Tab:CreateLabel("Farm Fruit Blox Fruit")
+
+local Button = Tab:CreateButton({
+   Name = "Zenith Hub Fruit Farm",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Zenith-h-fruit-fram/refs/heads/main/Fruit%20fram", true))()
+   end,
+})
+Tab:CreateLabel("Pet Go")
+local Button = Tab:CreateButton({
+   Name = "Speed X Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
 })
