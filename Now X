@@ -335,10 +335,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 })
 
 local Button = Tab:CreateButton({
-   Name = "Arceus VNG",
+   Name = "Arceus Vng",
    Callback = function()
-   -- The function that takes place when the button is pressed
-https://www.mediafire.com/file/d2z61eerih9qtc6/Roblox_-_VNG_Arceus_X_NEO_1.5.3.apk/file
+      -- Sao chép liên kết vào bộ nhớ tạm
+      setclipboard("https://www.mediafire.com/file/d2z61eerih9qtc6/Roblox_-_VNG_Arceus_X_NEO_1.5.3.apk/file")
+      print("Link đã được sao chép vào bộ nhớ tạm!")
    end,
 })
 
