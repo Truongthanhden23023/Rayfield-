@@ -334,6 +334,19 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Arceus X vng",
+   Callback = function()
+button.Text = "Mở Link"
+button.Parent = game.Players.LocalPlayer.PlayerGui.ScreenGui
+
+button.MouseButton1Click:Connect(function()
+    -- Mở trang web
+    game:GetService("GuiService"):OpenBrowserWindow("https://www.mediafire.com/file/d2z61eerih9qtc6/Roblox_-_VNG_Arceus_X_NEO_1.5.3.apk/file")
+end)
+    end,
+})
+
 local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "W Azure",
