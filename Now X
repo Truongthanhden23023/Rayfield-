@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-shared.LoaderTitle = "WELCOM TO NOW X HUB";
+shared.LoaderTitle = "WELCOME TO NOW X HUB";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
