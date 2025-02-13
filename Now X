@@ -398,13 +398,20 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/B
 })
 
 local Button = Tab:CreateButton({
-   Name = "TEDDY Hub",
+   Name = "Teddy Hub",
    Callback = function()
    -- The function that takes place when the button is pressed
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Turbo Lite",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Main.lua"))()
+   end,
+})
 
 local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
