@@ -338,7 +338,7 @@ local Button = Tab:CreateButton({
    Name = "Stream Sniper",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Truongthanhden23023/StreamSniper/refs/heads/main/nowx'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
    end,
 })
 
