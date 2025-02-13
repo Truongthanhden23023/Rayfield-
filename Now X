@@ -396,6 +396,16 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Blue-X-Hub/refs/heads/main/.github/workflows/Bluexhub"))()
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "TEDDY Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
+   end,
+})
+
+
 local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
