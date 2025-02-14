@@ -303,10 +303,10 @@ RemoteSpy:Start()
 })
 
 local Button = Tab:CreateButton({
-   Name = "DEX Explorer",
+   Name = "Premium DEX",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Dex-explorer/refs/heads/main/Dex"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pawslurr/Premium-Dex-V1/refs/heads/main/Dex%20Premium"))()
    end,
 })
 
