@@ -306,7 +306,7 @@ local Button = Tab:CreateButton({
    Name = "DEX Explorer",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dex-Explorer-27052"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Dex-explorer/refs/heads/main/Dex"))()
    end,
 })
 
