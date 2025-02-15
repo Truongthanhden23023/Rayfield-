@@ -478,7 +478,7 @@ local Button = Tab:CreateButton({
    Name = "murderers vs. sheriffs",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet(('https://pastefy.app/FGt2qgoL/raw'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurdervssheriff"))()
    end,
 })
 
