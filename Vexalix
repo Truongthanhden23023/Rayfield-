@@ -439,6 +439,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Redz",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+local Button = Tab:CreateButton({
+   local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+   end,
+})
+
+   end,
+})
+
+
 local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
