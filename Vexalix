@@ -444,12 +444,7 @@ local Button = Tab:CreateButton({
    Callback = function()
    -- The function that takes place when the button is pressed
 local Button = Tab:CreateButton({
-   local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/Truongthanhden23023/Redz/refs/heads/main/REDZ"))()
    end,
 })
 
