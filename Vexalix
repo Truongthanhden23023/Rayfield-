@@ -477,6 +477,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
    end,
 })
+
 local Tab = Window:CreateTab("Script Ugc", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
