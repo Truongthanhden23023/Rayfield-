@@ -443,7 +443,6 @@ local Button = Tab:CreateButton({
    Name = "Redz",
    Callback = function()
    -- The function that takes place when the button is pressed
-local Button = Tab:CreateButton({
    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Truongthanhden23023/Redz/refs/heads/main/REDZ"))()
    end,
 })
