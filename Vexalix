@@ -438,7 +438,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Main.lua"))()
    end,
 })
-
+local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "Redz",
    Callback = function()
