@@ -439,16 +439,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
    end,
 })
 
-local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Redz",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Redz/refs/heads/main/REDZ"))()
-   end,
-})
-
 local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
