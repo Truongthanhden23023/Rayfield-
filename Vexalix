@@ -448,10 +448,6 @@ local Button = Tab:CreateButton({
    end,
 })
 
-   end,
-})
-
-
 local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
