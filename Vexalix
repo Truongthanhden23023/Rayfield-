@@ -280,9 +280,9 @@ local Button = Tab:CreateButton({
 
 
 local Button = Tab:CreateButton({
-   Name = "Nah",
+   Name = "Server list",
    Callback = function()
-   loadstring(game:HttpGet(""))()
+   loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
    -- The function that takes place when the button is pressed
    end,
 })
