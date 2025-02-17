@@ -507,6 +507,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Al Chemy Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+   end,
+})
+
 local Tab = Window:CreateTab("Farm Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
