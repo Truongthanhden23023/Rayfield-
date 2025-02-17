@@ -413,7 +413,15 @@ local Button = Tab:CreateButton({
       print("Link đã được sao chép vào bộ nhớ tạm!")
    end,
 })
+local Tab = Window:CreateTab("Pet Simulator 99", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Spawner Gems",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleischv2/Ps99script/refs/heads/main/Hjn'))()
+   end,
+})
 
 local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
