@@ -271,9 +271,9 @@ local Toggle = Tab:CreateToggle({
 })
 
 local Button = Tab:CreateButton({
-   Name = "INF Health Blox Fruits",
+   Name = "Nah",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/infhealth/refs/heads/main/Blox%20Fruits"))()
+   loadstring(game:HttpGet(""))()
    -- The function that takes place when the button is pressed
    end,
 })
