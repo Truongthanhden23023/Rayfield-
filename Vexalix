@@ -271,6 +271,15 @@ local Toggle = Tab:CreateToggle({
 })
 
 local Button = Tab:CreateButton({
+   Name = "Skip-timer",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Skip-timer/refs/heads/main/.github/workflows/blank"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Button = Tab:CreateButton({
    Name = "Nah",
    Callback = function()
    loadstring(game:HttpGet(""))()
