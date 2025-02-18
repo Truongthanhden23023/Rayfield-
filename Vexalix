@@ -517,10 +517,10 @@ loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
 local Tab = Window:CreateTab("Kaitun Fruit Blox Fruit", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "Simple Script",
+   Name = "Simple Script (patched)",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/simplescript/refs/heads/main/.github/workflows/blank.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/WorkSmiplescript/refs/heads/main/.github/work"))()
    end,
 })
 
