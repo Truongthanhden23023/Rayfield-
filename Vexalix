@@ -520,7 +520,7 @@ local Button = Tab:CreateButton({
    Name = "Simple Script",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Simplescriptkaitun/refs/heads/main/kaitun.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Simplescriptkaitun/refs/heads/main/kaitun.lua", true))()
    end,
 })
 
