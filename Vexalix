@@ -520,7 +520,7 @@ local Button = Tab:CreateButton({
    Name = "Simple Script",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TBoyRoblox727/TBoyRobloxYT/refs/heads/main/bloxfruit-kaitan-main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/simplescript/refs/heads/main/.github/workflows/blank.lua"))()
    end,
 })
 
