@@ -271,9 +271,7 @@ local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "Find server bloxfruit",
    Callback = function()
-   getgenv().Team = "Pirates"
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughking-Rip-byTeddy"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Findserverbloxfruit/refs/heads/main/Findserver"))()
    -- The function that takes place when the button is pressed
    end,
 })
