@@ -269,7 +269,7 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "Find server bloxfruit(Patch)",
+   Name = "Find server bloxfruit(Fluxus)",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Wordfindserver/refs/heads/main/findserverbf.lua"))()
    -- The function that takes place when the button is pressed
