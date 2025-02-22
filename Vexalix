@@ -270,6 +270,26 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
+   Name = "Sao chép script vào bộ nhớ tạm",
+   Callback = function()
+      if setclipboard then
+         setclipboard('loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughKing-Kill-Teddy"))()')
+         game.StarterGui:SetCore("SendNotification", {
+            Title = "Thông báo",
+            Text = "Script đã được sao chép vào bộ nhớ tạm!",
+            Duration = 3
+         })
+      else
+         game.StarterGui:SetCore("SendNotification", {
+            Title = "Lỗi",
+            Text = "Thiết bị không hỗ trợ sao chép!",
+            Duration = 3
+         })
+      end
+   end,
+})
+
+local Button = Tab:CreateButton({
    Name = "Thunder Z Hub| Finder Fruits",
    Callback = function()
       -- Sao chép liên kết vào bộ nhớ tạm
