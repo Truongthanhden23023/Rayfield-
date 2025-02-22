@@ -273,9 +273,7 @@ local Button = Tab:CreateButton({
    Name = "Thunder Z Hub| Finder Fruits",
    Callback = function()
       -- Sao chép liên kết vào bộ nhớ tạm
-      setclipboard("_G.Webhook = ""
-_G.MetodeTeleport = "Instant" --"Tween" or "Instant"
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/BloxFruit/FindFruit.lua')))()")
+      setclipboard("https://fnote.net/notes/W4YbXg")
       print("Link đã được sao chép vào bộ nhớ tạm!")
    end,
 })
