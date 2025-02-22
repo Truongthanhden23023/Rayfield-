@@ -292,7 +292,7 @@ local Button = Tab:CreateButton({
    Name = "Script auto server Hop Dough King V2",
    Callback = function()
       -- Sao chép liên kết vào bộ nhớ tạm
-      setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AutoDoughKing-Kill-Teddy"))()")
+      setclipboard("https://fnote.net/notes/2PCG0y")
       print("Link đã được sao chép vào bộ nhớ tạm!")
    end,
 })
