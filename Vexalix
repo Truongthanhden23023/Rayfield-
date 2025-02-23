@@ -272,11 +272,7 @@ local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "Thunder Z Hub| Finder Fruits",
    Callback = function()
-   _G.Webhook = ""
-
-_G.MetodeTeleport = "Instant" --"Tween" or "Instant"
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/BloxFruit/FindFruit.lua')))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Thunder-Z-Hub-Finder-Fruits/refs/heads/main/Thunder%20Z%20Hub%7C%20Finder%20Fruits"))()
    -- The function that takes place when the button is pressed
    end,
 })
