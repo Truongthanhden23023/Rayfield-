@@ -270,6 +270,25 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local scriptText = [[
+getgenv().Team = "Marines"
+
+getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+
+getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+]]
+
+local Button = Tab:CreateButton({
+   Name = "W Azure",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+
+local scriptText = [[
 _G.Webhook = ""
 
 _G.MetodeTeleport = "Instant" --"Tween" or "Instant"
@@ -286,7 +305,10 @@ local Button = Tab:CreateButton({
 })
 
 local scriptText = [[
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Zenith-h-fruit-fram/refs/heads/main/Fruit%20fram", true))()
+ServerHopTimer = 5
+TeleportSafe = true
+Webhook = "Your Webhook Here"
+_G.Version="Fruit Farm"loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
 ]]
 
 local Button = Tab:CreateButton({
