@@ -269,6 +269,15 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Cuttay Hub (tìm đảo bí ẩn với gạt cần còn lại thì mua",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/refs/heads/main/Cuttayhubreal.lua'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
 local scriptText = [[
 local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
