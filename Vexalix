@@ -269,6 +269,23 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
+local scriptText = [[
+local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Redz",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
 local Button = Tab:CreateButton({
    Name = "Vxeze Hub Hop (sử dụng nhiều có thể bị ban khá cao Không khuyến khích sài)",
    Callback = function()
@@ -276,9 +293,6 @@ local Button = Tab:CreateButton({
    -- The function that takes place when the button is pressed
    end,
 })
-
-
-
 
 local scriptText = [[
 getgenv().Team = "Marines"
