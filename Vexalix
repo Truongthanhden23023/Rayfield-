@@ -369,7 +369,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
 ]]
 
 local Button = Tab:CreateButton({
-   Name = "Teddy Auto Hop Boss (chưa hoạt động)",
+   Name = "Teddy Auto Hop Boss",
    Callback = function()
       setclipboard(scriptText)
       print("Script đã được sao chép vào bộ nhớ tạm!")
