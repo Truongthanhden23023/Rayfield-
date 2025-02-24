@@ -269,6 +269,17 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Vxeze Hub Hop (sử dụng nhiều có thể bị ban khá cao Không khuyến khích sài)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+
+
 local scriptText = [[
 getgenv().Team = "Marines"
 
@@ -335,7 +346,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Hai
 ]]
 
 local Button = Tab:CreateButton({
-   Name = "Teddy Auto Hop Boss",
+   Name = "Teddy Auto Hop Boss (chưa hoạt động)",
    Callback = function()
       setclipboard(scriptText)
       print("Script đã được sao chép vào bộ nhớ tạm!")
