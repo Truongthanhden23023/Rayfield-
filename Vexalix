@@ -590,6 +590,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/ref
 })
 local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
 
+local label15 = Tab:CreateLabel("lưu ý nếu chơi chung với người tỉ lệ ban cao")
+local label15 = Tab:CreateLabel("Note: If you play with other people, the ban rate is very high.")
 local scriptText = [[
 https://ads.luarmor.net/get_key?for=Leaf_Hub__Daily_Key-IMmpYwRKcYxy
 ]]
