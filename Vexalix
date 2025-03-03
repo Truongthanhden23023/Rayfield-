@@ -269,6 +269,65 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Anti ban",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   local function AntiBan()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    local TeleportService = game:GetService("TeleportService")
+
+    -- Bypass Detection (Ẩn danh tính)
+    local mt = getrawmetatable(game)
+    local oldIndex = mt.__index
+    setreadonly(mt, false)
+    mt.__index = newcclosure(function(self, key)
+        if key == "WalkSpeed" or key == "JumpPower" or key == "Health" then
+            return nil -- Tránh bị phát hiện khi thay đổi giá trị này
+        end
+        return oldIndex(self, key)
+    end)
+    setreadonly(mt, true)
+
+    -- Auto Rejoin nếu bị kick
+    LocalPlayer.OnTeleport:Connect(function(State)
+        if State == Enum.TeleportState.Failed then
+            TeleportService:Teleport(game.PlaceId, LocalPlayer)
+        end
+    end)
+
+    -- Auto Server Hop khi bị nghi ngờ
+    local function ServerHop()
+        local HttpService = game:GetService("HttpService")
+        local Servers = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+        for _,v in pairs(Servers.data) do
+            if v.playing < v.maxPlayers then
+                TeleportService:TeleportToPlaceInstance(game.PlaceId, v.id, LocalPlayer)
+                break
+            end
+        end
+    end
+
+    -- Nếu thấy bị theo dõi, đổi server ngay
+    LocalPlayer.Chatted:Connect(function(msg)
+        if string.match(msg, "hack") or string.match(msg, "cheat") then
+            ServerHop()
+        end
+    end)
+
+    print("🔥 Anti Ban Activated!")
+end
+
+-- Gọi hàm Anti Ban khi UI mở
+AntiBan()
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+
 local scriptText = [[
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
 ]]
