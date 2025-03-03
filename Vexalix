@@ -359,7 +359,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Cuttay Hub (tìm đảo bí ẩn với gạt cần còn lại thì mua",
    Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/diemquy/CutTayHub/refs/heads/main/Cuttayhubreal.lua'))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a1498369f289af2671cca90085f23fb8.lua"))()        
    -- The function that takes place when the button is pressed
    end,
 })
