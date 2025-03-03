@@ -270,6 +270,19 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local scriptText = [[
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Min Gaming Hop Boss",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+
+local scriptText = [[
 local Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV1"))()
 ]]
