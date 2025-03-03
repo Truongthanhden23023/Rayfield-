@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-shared.LoaderTitle = "WELCOME TO Vexalix";
+shared.LoaderTitle = "WELCOME TO M1";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -104,7 +104,7 @@ local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "Vexalix VIETNAM 🇻🇳",
+    Text = "M1 VIETNAM 🇻🇳",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
@@ -224,9 +224,9 @@ wait(0.25);
 v5:Destroy();
 
 local Window = Rayfield:CreateWindow({
-   Name = "Vexalix -VIETNAM🇻🇳",
+   Name = "M1 -VIETNAM🇻🇳",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Chào Mừng Đến Với Vexalix Vietnam🇻🇳",
+   LoadingTitle = "Chào Mừng Đến Với M1",
    LoadingSubtitle = "by @Vexalix25",
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -529,6 +529,28 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
    end,
 })
+local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
+
+local scriptText = [[
+https://ads.luarmor.net/get_key?for=Leaf_Hub__Daily_Key-IMmpYwRKcYxy
+]]
+
+local Button = Tab:CreateButton({
+   Name = "GET KEY Leaf Hub",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Leaf Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://leafhub.dev/script.lua"))()
+   end,
+})
+
 local Tab = Window:CreateTab("Old Toilet Tower Defense", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
