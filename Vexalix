@@ -269,7 +269,6 @@ local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
-
 local scriptText = [[
 local Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV1"))()
@@ -282,17 +281,6 @@ local Button = Tab:CreateButton({
       print("Script đã được sao chép vào bộ nhớ tạm!")
    end,
 })
-
-
-
-local Button = Tab:CreateButton({
-   Name = "Cuttay Hub (tìm đảo bí ẩn với gạt cần còn lại thì mua",
-   Callback = function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a1498369f289af2671cca90085f23fb8.lua"))()        
-   -- The function that takes place when the button is pressed
-   end,
-})
-
 
 local scriptText = [[
 local Settings = {
