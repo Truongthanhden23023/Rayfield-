@@ -272,20 +272,6 @@ local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local scriptText = [[
 local Settings = {
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
-]]
-
-local Button = Tab:CreateButton({
-   Name = "Min Gaming Hop Boss",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-
-local scriptText = [[
-local Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV1"))()
 ]]
 
@@ -326,7 +312,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Vxeze Hub Hop (sử dụng nhiều có thể bị ban khá cao Không khuyến khích sài)",
+   Name = "Vxeze Hub Hop (Don't Work!)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM"))()
    -- The function that takes place when the button is pressed
@@ -531,6 +517,17 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
    end,
 })
+local Tab = Window:CreateTab("Hop", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Min Gaming Hop Boss",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
 local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
 
 local label15 = Tab:CreateLabel("lưu ý nếu chơi chung với người tỉ lệ ban cao")
