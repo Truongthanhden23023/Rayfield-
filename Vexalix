@@ -710,7 +710,7 @@ local Button = Tab:CreateButton({
    Name = "CLICK FOR UGC 2",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NooobieBlox/ClickForUGC2/main/LimitedUGC"))()   
+loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/clickforugc2/refs/heads/main/work"))()   
    end,
 })
 
