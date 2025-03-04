@@ -398,21 +398,28 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/ref
 local Tab = Window:CreateTab("Script UGC", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "Sword Fighting Simulator X",
+   Name = "Collect Gems For Ugc",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/swordfight.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/collectgems.lua"))()
    end,
 })
 
 local Button = Tab:CreateButton({
-   Name = "click for ugc 2",
+   Name = "Click For Ugc 2",
    Callback = function()
    -- The function that takes place when the button is pressed
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NooobieBlox/ClickForUGC2/main/LimitedUGC"))()
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Sword Fighting Simulator X",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/swordfight.lua"))();
+   end,
+})
 
 local Tab = Window:CreateTab("Find Fruit", 4483362458) -- Title, Image
 
