@@ -266,6 +266,18 @@ local label15 = Tab:CreateLabel("Support Vietnamese script for Vietnamese people
 local label15 = Tab:CreateLabel("Hỗ Trợ Script Tiếng Việt Dành Cho Người Việt")
 local label15 = Tab:CreateLabel("Support tools")
 local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
+local Tab = Window:CreateTab("Support yêu cầu thêm script", 4483362458) -- Title, Image
+
+https://www.facebook.com/profile.php?id=61572637478863&mibextid=ZbWKwL
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Facebook",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
