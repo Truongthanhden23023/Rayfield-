@@ -632,6 +632,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
 })
 local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "TheBillDevHub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV1"))()
+   end,
+})
+
 local scriptText = [[
 https://ads.luarmor.net/get_key?for=VHFslhWdrPey
 ]]
