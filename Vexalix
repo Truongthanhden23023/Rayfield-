@@ -640,6 +640,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
 })
 local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Astral v1",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
+   end,
+})
 
 local Button = Tab:CreateButton({
    Name = "Vxeze Hub By Dex Skibidi",
