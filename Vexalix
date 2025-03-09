@@ -640,6 +640,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
 })
 local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
 
+
+local Button = Tab:CreateButton({
+   Name = "Vxeze Hub By Dex Skibidi",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/Skidlamcho.txt"))()
+   end,
+})
+
 local Button = Tab:CreateButton({
    Name = "TheBillDevHub",
    Callback = function()
