@@ -431,6 +431,9 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
    end,
 })
+local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
+
+
 
 local Tab = Window:CreateTab("Script UGC", 4483362458) -- Title, Image
 
