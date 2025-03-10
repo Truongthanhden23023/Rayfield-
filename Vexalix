@@ -433,6 +433,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/ref
 })
 local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Sterling Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zayn31214/name/refs/heads/main/SterlingNew"))()
+   end,
+})
 
 
 local Tab = Window:CreateTab("Script UGC", 4483362458) -- Title, Image
