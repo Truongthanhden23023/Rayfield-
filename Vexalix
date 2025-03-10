@@ -501,6 +501,16 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Hop", 4483362458) -- Title, Image
 
+
+local Button = Tab:CreateButton({
+   Name = "Datthg Hop Boss",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatTHGHopBoss"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
 local Button = Tab:CreateButton({
    Name = "Cuttay Hub",
    Callback = function()
