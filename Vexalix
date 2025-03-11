@@ -433,6 +433,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/ref
 })
 local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Nexus Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CrazyHub123/NexusHubRevival/refs/heads/main/Main.lua"))()
+   end,
+})
+
 local scriptText = [[
 AZTREON-pwa38QZ-BoPMF5Vo
 ]]
