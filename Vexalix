@@ -286,13 +286,13 @@ local function getLocalTime(offset)
 end
 
 -- Tạo label
-local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
+local label15 = Tab:CreateLabel("Loading time...")
 
 -- Cập nhật thời gian mỗi giây
 task.spawn(function()
     while true do
         label15:SetText("Vietnam Time: " .. getLocalTime(7)) -- Cập nhật thời gian
-        task.wait(1)  -- Đợi 1 giây rồi chạy lại
+        task.wait(1)  -- Đợi 1 giây rồi cập nhật lại
     end
 end)
 
