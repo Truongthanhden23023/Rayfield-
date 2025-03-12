@@ -281,16 +281,20 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
-local Toggle = Tab:CreateToggle({
-   Name = "Nhocadoi",
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Sourcenhocadoi/refs/heads/main/Test"))()
-   -- The function that takes place when the toggle is pressed
-   -- The variable (Value) is a boolean on whether the toggle is true or false
-   end,
-})
+local function getLocalTime(offset)
+    return os.date("%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
+end
+
+-- Tạo label
+local label15 = Tab:CreateLabel("Loading time...")
+
+-- Cập nhật thời gian mỗi giây
+task.spawn(function()
+    while true do
+        label15:SetText("Vietnam Time: " .. getLocalTime(7)) -- Cập nhật thời gian
+        task.wait(1)  -- Đợi 1 giây rồi cập nhật lại
+    end
+end)
 
 local Toggle = Tab:CreateToggle({
    Name = "Auto Click",
