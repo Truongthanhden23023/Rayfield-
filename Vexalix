@@ -285,7 +285,15 @@ local function getLocalTime(offset)
     return os.date("!%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
 end
 
-local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
+local label15 = Tab:CreateLabel("Việt Nam Giờ: " .. getLocalTime(7))
+
+-- Cập nhật mỗi giây
+task.spawn(function()
+    while true do
+        label15:SetText("Vietnam Time: " .. getLocalTime(7))
+        task.wait(1)  -- Đợi 1 giây rồi cập nhật lại
+    end
+end)
 
 
 local Toggle = Tab:CreateToggle({
