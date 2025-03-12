@@ -282,19 +282,19 @@ local Button = Tab:CreateButton({
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local function getLocalTime(offset)
-    return os.date("!%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
+    return os.date("%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
 end
 
+-- Tạo label
 local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
 
--- Cập nhật mỗi giây
+-- Cập nhật thời gian mỗi giây
 task.spawn(function()
     while true do
-        label15:SetText("Vietnam Time: " .. getLocalTime(7))
-        task.wait(1)  -- Đợi 1 giây rồi cập nhật lại
+        label15:SetText("Vietnam Time: " .. getLocalTime(7)) -- Cập nhật thời gian
+        task.wait(1)  -- Đợi 1 giây rồi chạy lại
     end
 end)
-
 
 local Toggle = Tab:CreateToggle({
    Name = "Nhocadoi",
