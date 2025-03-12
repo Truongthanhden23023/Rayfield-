@@ -281,6 +281,11 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
+local function getLocalTime(offset)
+    return os.date("!%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
+end
+
+local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
 
 local Toggle = Tab:CreateToggle({
    Name = "Nhocadoi",
@@ -293,8 +298,6 @@ local Toggle = Tab:CreateToggle({
    end,
 })
 
-
-
 local Toggle = Tab:CreateToggle({
    Name = "Auto Click",
    CurrentValue = false,
@@ -305,7 +308,6 @@ local Toggle = Tab:CreateToggle({
    -- The variable (Value) is a boolean on whether the toggle is true or false
    end,
 })
-
 
 local Toggle = Tab:CreateToggle({
    Name = "Auto Anti Afk",
@@ -326,7 +328,6 @@ local Button = Tab:CreateButton({
    end,
 })
 
-
 local Button = Tab:CreateButton({
    Name = "Server list",
    Callback = function()
@@ -342,7 +343,6 @@ local Button = Tab:CreateButton({
    -- The function that takes place when the button is pressed
    end,
 })
-
 
 local Button = Tab:CreateButton({
    Name = "Just A Script 🌞",
