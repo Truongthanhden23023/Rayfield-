@@ -281,15 +281,6 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
-local function getLocalTime(offset)
-    return os.date("!%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
-end
-
-print("Việt Nam: " .. getLocalTime(7))
-print("Mỹ (New York): " .. getLocalTime(-5))
-print("Nhật Bản: " .. getLocalTime(9))
-print("Anh (London): " .. getLocalTime(0))
-
 
 local Toggle = Tab:CreateToggle({
    Name = "Nhocadoi",
