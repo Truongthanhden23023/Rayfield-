@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-shared.LoaderTitle = "WELCOME TO M1";
+shared.LoaderTitle = "WELCOME TO ALL Script";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -104,7 +104,7 @@ local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "M1 VIETNAM 🇻🇳",
+    Text = "NOW X HUB",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
@@ -223,12 +223,13 @@ TweenObject(v6, 0.25, {
 wait(0.25);
 v5:Destroy();
 
+
 local Window = Rayfield:CreateWindow({
-   Name = "M1 -VIETNAM🇻🇳",
+   Name = "ALL Script",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Chào Mừng Đến Với M1",
-   LoadingSubtitle = "by @Vexalix25",
-   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -236,7 +237,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Vexalix Hub"
+      FileName = "Vexalix25"
    },
 
    Discord = {
@@ -245,597 +246,34 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "Vexalix",
       Subtitle = "Key System",
-      Note = "Get Key",
-      Note = Chúc Bạn Một Ngày Vui Vẻ Và Thành Công :)", -- Use this to tell the user how to get a key
+      Note = "Chúc Bạn Một Ngày Vui Vẻ Và thành Công Cảm Ơn Bạn đã Sử Dụng. =)", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"m1"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"fix"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
-})
-local Tab = Window:CreateTab("Update Log", 4483362458) -- Title, Image
-local label15 = Tab:CreateLabel("English-Vietnam")
-local label15 = Tab:CreateLabel("Available on all clients")
-local label15 = Tab:CreateLabel("Dùng Được trên tất cả client")
-local label15 = Tab:CreateLabel("Android -IOS -PC")
-local label15 = Tab:CreateLabel("Support Vietnamese script for Vietnamese people")
-local label15 = Tab:CreateLabel("Hỗ Trợ Script Tiếng Việt Dành Cho Người Việt")
-local label15 = Tab:CreateLabel("Support tools")
-local label15 = Tab:CreateLabel("Hỗ Trợ các công cụ")
-
-local Tab = Window:CreateTab("Support yêu cầu thêm script", 4483362458) -- Title, Image
-local scriptText = [[
-https://www.facebook.com/profile.php?id=61572637478863&mibextid=ZbWKwL
-]]
-
-local Button = Tab:CreateButton({
-   Name = "Facebook",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
 })
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
-local Toggle = Tab:CreateToggle({
-   Name = "Auto Click",
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Autoclick-/refs/heads/main/Auto"))()
-   -- The function that takes place when the toggle is pressed
-   -- The variable (Value) is a boolean on whether the toggle is true or false
-   end,
-})
+local function getLocalTime(offset)
+    return os.date("%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
+end
+
+-- Tạo label
+local label15 = Tab:CreateLabel("Loading time...")
+
+-- Cập nhật thời gian mỗi giây
+task.spawn(function()
+    while true do
+        label15:SetText("Vietnam Time: " .. getLocalTime(7)) -- Cập nhật thời gian
+        task.wait(1)  -- Đợi 1 giây rồi cập nhật lại
+    end
+end)
 
-local Toggle = Tab:CreateToggle({
-   Name = "Auto Anti Afk",
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Antiafk/refs/heads/main/Antiafk"))()
-   -- The function that takes place when the toggle is pressed
-   -- The variable (Value) is a boolean on whether the toggle is true or false
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Server list",
-   Callback = function()
-   loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Hitbox+esp",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Hitboxesp/refs/heads/main/.github/workflows/blank"))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Just A Script 🌞",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "IY",
-   Callback = function()
-   loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Shader",
-   Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Giảm Đồ Họa",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fixlag/refs/heads/main/Fixlag"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Quay tay -(Hand Spinner)",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Simple Spy",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-local RemoteSpy = loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
-RemoteSpy:Start()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Premium DEX",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/pawslurr/Premium-Dex-V1/refs/heads/main/Dex%20Premium"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Shit Lock",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Shitlock/refs/heads/main/Shit%20lock"))("Spider Script")
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Delta Keyboard Crack",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Invisible",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Stream Sniper",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
-   end,
-})
-local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Nexus Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CrazyHub123/NexusHubRevival/refs/heads/main/Main.lua"))()
-   end,
-})
-
-local scriptText = [[
-AZTREON-pwa38QZ-BoPMF5Vo
-]]
-
-local Button = Tab:CreateButton({
-   Name = "Key Aztreon Hub",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-
-local Button = Tab:CreateButton({
-   Name = "Aztreon Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/aal3-33/Hub/refs/heads/main/Gitscripts/aztreonhub.lua"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Sterling Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Zayn31214/name/refs/heads/main/SterlingNew"))()
-   end,
-})
-
-
-local Tab = Window:CreateTab("Script UGC", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Collect For Ugc",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Haxxxxxxxxxxxx/AutoFarmFast/refs/heads/main/collectforugc.gay"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Collect Gems For Ugc",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/collectgems.lua"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Click For Ugc 2",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NooobieBlox/ClickForUGC2/main/LimitedUGC"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Sword Fighting Simulator X",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/swordfight.lua"))();
-   end,
-})
-
-local Tab = Window:CreateTab("Find Fruit", 4483362458) -- Title, Image
-
-local scriptText = [[
-_G.Webhook = ""
-
-_G.MetodeTeleport = "Instant" --"Tween" or "Instant"
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/BloxFruit/FindFruit.lua')))()
-]]
-
-local Button = Tab:CreateButton({
-   Name = "Thunder Z Hub| Finder Fruits",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-local scriptText = [[
-ServerHopTimer = 5
-TeleportSafe = true
-Webhook = "Your Webhook Here"
-_G.Version="Fruit Farm"loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
-]]
-
-local Button = Tab:CreateButton({
-   Name = "Zenith Hub Fruit Farm",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-local Tab = Window:CreateTab("Hop", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "AK Gaming Hop",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-HOP"))()    
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Datthg Hop Boss",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatTHGHopBoss"))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-
-local Button = Tab:CreateButton({
-   Name = "Cuttay Hub",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/cuttayhub/refs/heads/main/workcuttayhub"))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-
-local Button = Tab:CreateButton({
-   Name = "Teddy Hub Hop",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Min Gaming Hop Boss",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-
-local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
-
-local label15 = Tab:CreateLabel("lưu ý nếu chơi chung với người tỉ lệ ban cao")
-local label15 = Tab:CreateLabel("Note: If you play with other people, the ban rate is very high.")
-local scriptText = [[
-https://ads.luarmor.net/get_key?for=Leaf_Hub__Daily_Key-IMmpYwRKcYxy
-]]
-
-local Button = Tab:CreateButton({
-   Name = "GET KEY Leaf Hub",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Leaf Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://leafhub.dev/script.lua"))()
-   end,
-})
-
-local Tab = Window:CreateTab("Old Toilet Tower Defense", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Spawn Unit",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/OldToiletTD"))()
-   end,
-})
-
-local Tab = Window:CreateTab("CLIENT", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Discord",
-   Callback = function()
-      -- Sao chép liên kết vào bộ nhớ tạm
-      setclipboard("https://discord.gg/gz6WFuMg")
-      print("Link đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Arceus VNG",
-   Callback = function()
-      -- Sao chép liên kết vào bộ nhớ tạm
-      setclipboard("https://www.mediafire.com/file/d2z61eerih9qtc6/Roblox_-_VNG_Arceus_X_NEO_1.5.3.apk/file")
-      print("Link đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-local Tab = Window:CreateTab("Pet Simulator 99", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Spawner Gems",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleischv2/Ps99script/refs/heads/main/Hjn'))()
-   end,
-})
-
-local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
-local Button = Tab:CreateButton({
-   Name = "W Azure",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Wazure/refs/heads/main/Wazure"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "HOHO HUB V4",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/hohohub/refs/heads/main/Hoho%20hub"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "ATTACK HUB",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Attackhub/refs/heads/main/Attackhub"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Blue X Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Blue-X-Hub/refs/heads/main/.github/workflows/Bluexhub"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Teddy Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Turbo Lite",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Main.lua"))()
-   end,
-})
-local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Rubu Roblox V4",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/RuBuV4.lua"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Astral v1",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Vxeze Hub By Dex Skibidi",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-getgenv().Team = "Marines"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/Skidlamcho.txt"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "TheBillDevHub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/selciawashere/screepts/refs/heads/main/BFKEYSYS",true))()
-   end,
-})
-
-local scriptText = [[
-https://ads.luarmor.net/get_key?for=VHFslhWdrPey
-]]
-
-local Button = Tab:CreateButton({
-   Name = "GET KEY Banana Hub",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-
-local scriptText = [[
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
-getgenv().Key = "Nhập của m vào" 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
-]]
-
-local Button = Tab:CreateButton({
-   Name = "Banana Hub",
-   Callback = function()
-      setclipboard(scriptText)
-      print("Script đã được sao chép vào bộ nhớ tạm!")
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Redz",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Redz/refs/heads/main/REDZ"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Speed X Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Rubu V3",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Xeno Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-getgenv().Team = "Marines"
-getgenv().Hide_Menu = false
-getgenv().Auto_Execute = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Al Chemy Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Min gaming",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinCE"))()
-   end,
-}) 
-
-local Button = Tab:CreateButton({
-   Name = "Hiru Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Dev-Hiru/refs/heads/main/HiruHub.lua"))()
-   end,
-}) 
-
-local Button = Tab:CreateButton({
-   Name = "Datthg V1",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV1"))()
-   end,
-}) 
-
-local Button = Tab:CreateButton({
-   Name = "Zis Roblox",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb10"))()
-   end,
-}) 
-
-local Tab = Window:CreateTab("Kaitun Fruit Blox Fruit", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Simple Script (patched)",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/WorkSmiplescript/refs/heads/main/.github/work"))()
-   end,
-})
-
-local Tab = Window:CreateTab("Pet Go", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Speed X Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-   end,
-})
-
-local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
-
-local Button = Tab:CreateButton({
-   Name = "Rael Hub",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
-   end,
-})
 
 Rayfield:LoadConfiguration()
