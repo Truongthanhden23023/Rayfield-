@@ -1,20 +1,30 @@
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Parent = game.CoreGui
+
+-- Tạo icon
 local Icon = Instance.new("ImageLabel")
-Icon.Parent = game.CoreGui
+Icon.Parent = ScreenGui
 Icon.Size = UDim2.new(0, 50, 0, 50)
-Icon.Position = UDim2.new(0.5, -25, 0.5, -25)
+Icon.Position = UDim2.new(0.5, -25, 0.4, -25)
 Icon.BackgroundTransparency = 1
-Icon.Image = "rbxassetid://79092334123520" -- Thay ID ảnh của bạn
+Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
 Icon.Visible = true -- Ban đầu hiển thị
 
-local isIconVisible = false -- Trạng thái của icon
+-- Tạo nút toggle
+local ToggleButton = Instance.new("TextButton")
+ToggleButton.Parent = ScreenGui
+ToggleButton.Size = UDim2.new(0, 100, 0, 50)
+ToggleButton.Position = UDim2.new(0.5, -50, 0.6, 0)
+ToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.Text = "Ẩn Icon"
 
--- Toggle icon khi nhấn phím T
-game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
-    if not gameProcessed and input.KeyCode == Enum.KeyCode.T then
-        isIconVisible = not isIconVisible
-        Icon.Visible = isIconVisible
-    end
+-- Sự kiện bấm nút
+ToggleButton.MouseButton1Click:Connect(function()
+    Icon.Visible = not Icon.Visible -- Đảo trạng thái icon
+    ToggleButton.Text = Icon.Visible and "Ẩn Icon" or "Hiện Icon"
 end)
+
 
 shared.LoaderTitle = "WELCOME TO Vexalix";
 shared.LoaderKeyFrames = {
