@@ -9,29 +9,6 @@ iconButton.Position = UDim2.new(0, 10, 0, 10) -- Góc trên trái
 iconButton.Image = "rbxassetid://79092334123520" -- Thay ID ảnh theo ý muốn
 iconButton.BackgroundTransparency = 1
 
--- Tạo GUI mục tiêu
-local targetGui = Instance.new("Frame", gui)
-targetGui.Size = UDim2.new(0, 300, 0, 200)
-targetGui.Position = UDim2.new(0.5, -150, 0.5, -100)
-targetGui.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-targetGui.Visible = false
-
--- Biến kiểm soát kéo thả
-local dragging, dragInput, startPos, dragStart = false, nil, nil, nil
-
-iconButton.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        dragging = true
-        dragStart = input.Position
-        startPos = iconButton.Position
-        input.Changed:Connect(function()
-            if input.UserInputState == Enum.UserInputState.End then
-                dragging = false
-            end
-        end)
-    end
-end)
-
 iconButton.InputChanged:Connect(function(input)
     if input.UserInputType == Enum.UserInputType.MouseMovement then
         dragInput = input
