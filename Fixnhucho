@@ -1,12 +1,833 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-]]--
+shared.LoaderTitle = "WELCOME TO Vexalix";
+shared.LoaderKeyFrames = {
+    [1] = {
+        1,
+        10
+    },
+    [2] = {
+        2,
+        30
+    },
+    [3] = {
+        3,
+        60
+    },
+    [4] = {
+        2,
+        100
+    }
+};
+local v2 = {
+    LoaderData = {
+        Name = shared.LoaderTitle or "A Loader",
+        Colors = shared.LoaderColors or {
+            Main = Color3.fromRGB(0, 0, 0),
+            Topic = Color3.fromRGB(200, 200, 200),
+            Title = Color3.fromRGB(255, 255, 255),
+            LoaderBackground = Color3.fromRGB(40, 40, 40),
+            LoaderSplash = Color3.fromRGB(0, 191, 255)
+        }
+    },
+    Keyframes = shared.LoaderKeyFrames or {
+        [1] = {
+            1,
+            10
+        },
+        [2] = {
+            2,
+            30
+        },
+        [3] = {
+            3,
+            60
+        },
+        [4] = {
+            2,
+            100
+        }
+    }
+};
+local v3 = {
+    [1] = "",
+    [2] = "",
+    [3] = "",
+    [4] = ""
+};
+function TweenObject(v178, v179, v180)
+    game.TweenService:Create(v178, TweenInfo.new(v179, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), v180):Play();
+end
+function CreateObject(v181, v182)
+    local v183 = Instance.new(v181);
+    local v184;
+    for v416, v417 in pairs(v182) do
+        if (v416 ~= "Parent") then
+            v183[v416] = v417;
+        else
+            v184 = v417;
+        end
+    end
+    v183.Parent = v184;
+    return v183;
+end
+local function v4(v186, v187)
+    local v188 = Instance.new("UICorner");
+    v188.CornerRadius = UDim.new(0, v186);
+    v188.Parent = v187;
+end
+local v5 = CreateObject("ScreenGui", {
+    Name = "Core",
+    Parent = game.CoreGui
+});
+local v6 = CreateObject("Frame", {
+    Name = "Main",
+    Parent = v5,
+    BackgroundColor3 = v2.LoaderData.Colors.Main,
+    BorderSizePixel = 0,
+    ClipsDescendants = true,
+    Position = UDim2.new(0.5, 0, 0.5, 0),
+    AnchorPoint = Vector2.new(0.5, 0.5),
+    Size = UDim2.new(0, 0, 0, 0)
+});
+v4(12, v6);
+local v7 = CreateObject("ImageLabel", {
+    Name = "UserImage",
+    Parent = v6,
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://120744310997899",
+    Position = UDim2.new(0, 15, 0, 10),
+    Size = UDim2.new(0, 50, 0, 50)
+});
+v4(25, v7);
+local v8 = CreateObject("TextLabel", {
+    Name = "UserName",
+    Parent = v6,
+    BackgroundTransparency = 1,
+    Text = "Vexalix",
+    Position = UDim2.new(0, 75, 0, 10),
+    Size = UDim2.new(0, 200, 0, 50),
+    Font = Enum.Font.GothamBold,
+    TextColor3 = v2.LoaderData.Colors.Title,
+    TextSize = 14,
+    TextXAlignment = Enum.TextXAlignment.Left
+});
+local v9 = CreateObject("TextLabel", {
+    Name = "Top",
+    TextTransparency = 1,
+    Parent = v6,
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0, 30, 0, 70),
+    Size = UDim2.new(0, 301, 0, 20),
+    Font = Enum.Font.Gotham,
+    Text = "Loader",
+    TextColor3 = v2.LoaderData.Colors.Topic,
+    TextSize = 10,
+    TextXAlignment = Enum.TextXAlignment.Left
+});
+local v10 = CreateObject("TextLabel", {
+    Name = "Title",
+    Parent = v6,
+    TextTransparency = 1,
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0, 30, 0, 90),
+    Size = UDim2.new(0, 301, 0, 46),
+    Font = Enum.Font.Gotham,
+    RichText = true,
+    Text = "<b>" .. v2.LoaderData.Name .. "</b>",
+    TextColor3 = v2.LoaderData.Colors.Title,
+    TextSize = 14,
+    TextXAlignment = Enum.TextXAlignment.Left
+});
+local v11 = CreateObject("Frame", {
+    Name = "BG",
+    Parent = v6,
+    AnchorPoint = Vector2.new(0.5, 0),
+    BackgroundTransparency = 1,
+    BackgroundColor3 = v2.LoaderData.Colors.LoaderBackground,
+    BorderSizePixel = 0,
+    Position = UDim2.new(0.5, 0, 0, 70),
+    Size = UDim2.new(0.8500000238418579, 0, 0, 24)
+});
+v4(8, v11);
+local v12 = CreateObject("Frame", {
+    Name = "Progress",
+    Parent = v11,
+    BackgroundColor3 = v2.LoaderData.Colors.LoaderSplash,
+    BackgroundTransparency = 1,
+    BorderSizePixel = 0,
+    Size = UDim2.new(0, 0, 0, 24)
+});
+v4(8, v12);
+local v13 = CreateObject("TextLabel", {
+    Name = "StepLabel",
+    Parent = v6,
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0.5, 0, 1, - 25),
+    Size = UDim2.new(1, - 20, 0, 20),
+    Font = Enum.Font.Gotham,
+    Text = "",
+    TextColor3 = v2.LoaderData.Colors.Topic,
+    TextSize = 14,
+    TextXAlignment = Enum.TextXAlignment.Center,
+    AnchorPoint = Vector2.new(0.5, 0.5)
+});
+function UpdateStepText(v191)
+    v13.Text = v3[v191] or "" ;
+end
+function UpdatePercentage(v193, v194)
+    TweenObject(v12, 0.5, {
+        Size = UDim2.new(v193 / 100, 0, 0, 24)
+    });
+    UpdateStepText(v194);
+end
+TweenObject(v6, 0.25, {
+    Size = UDim2.new(0, 346, 0, 121)
+});
+wait();
+TweenObject(v9, 0.5, {
+    TextTransparency = 0
+});
+TweenObject(v10, 0.5, {
+    TextTransparency = 0
+});
+TweenObject(v11, 0.5, {
+    BackgroundTransparency = 0
+});
+TweenObject(v12, 0.5, {
+    BackgroundTransparency = 0
+});
+for v195, v196 in pairs(v2.Keyframes) do
+    wait(v196[1]);
+    UpdatePercentage(v196[2], v195);
+end
+UpdatePercentage(100, 4);
+TweenObject(v9, 0.5, {
+    TextTransparency = 1
+});
+TweenObject(v10, 0.5, {
+    TextTransparency = 1
+});
+TweenObject(v11, 0.5, {
+    BackgroundTransparency = 1
+});
+TweenObject(v12, 0.5, {
+    BackgroundTransparency = 1
+});
+wait(0.5);
+TweenObject(v6, 0.25, {
+    Size = UDim2.new(0, 0, 0, 0)
+});
+wait(0.25);
+v5:Destroy();
 
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then local v85=0;while true do if (v85==0) then v19=v0(v3(v30,1,1));return "";end end else local v86=v2(v0(v30,16));if v19 then local v109=0;local v110;while true do if (v109==0) then v110=v5(v86,v19);v19=nil;v109=1;end if (v109==1) then return v110;end end else return v86;end end end);local function v20(v31,v32,v33) if v33 then local v87=(v31/((5 -3)^(v32-(928 -(214 + 713)))))%((5 -(1273 -(226 + 1044)))^(((v33-(1 -0)) -(v32-(878 -(282 + (2590 -1995))))) + ((119 -(32 + 85)) -1))) ;return v87-(v87%(1 + 0)) ;else local v88=(621 -(544 + 11 + 64))^(v32-(932 -(857 + 17 + 57))) ;return (((v31%(v88 + v88))>=v88) and (569 -(367 + 201))) or ((2022 -(892 + 65)) -(68 + 997)) ;end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + (4 -2) );v18=v18 + (3 -1) ;return (v36 * (469 -213)) + v35 ;end local function v23() local v37,v38,v39,v40=v1(v16,v18,v18 + ((1402 -1049) -(87 + 263)) );v18=v18 + ((1136 -(802 + 150)) -(67 + 113)) ;return (v40 * (12302277 + 4474939)) + (v39 * (160901 -95365)) + (v38 * (189 + 67)) + v37 ;end local function v24() local v41=430 -(44 + 386) ;local v42;local v43;local v44;local v45;local v46;local v47;while true do if (v41==((3 + 4) -4)) then if (v46==(0 -(0 -0))) then if (v45==(0 + 0)) then return v47 * (997 -(915 + 82)) ;else local v125=0 -0 ;while true do if (v125==(0 + 0)) then v46=1 + 0 ;v44=0 -0 ;break;end end end elseif (v46==(3234 -(1069 + 118))) then return ((v45==(0 -0)) and (v47 * ((1 -0)/(0 -0)))) or (v47 * NaN) ;end return v8(v47,v46-(178 + 845) ) * (v44 + (v45/((3 -1)^(52 + 0)))) ;end if (v41==(792 -((1443 -1075) + 423))) then v44=1 -0 ;v45=(v20(v43,1,20) * ((1082 -(1020 + 60))^((12 + 1443) -(630 + 793)))) + v42 ;v41=(5 + 1) -4 ;end if (v41==(20 -(10 + 8))) then v46=v20(v43,80 -59 ,473 -(416 + 26) );v47=((v20(v43,102 -70 )==(1 + (1055 -(87 + 968)))) and  -(1 -0)) or (1748 -(760 + 987)) ;v41=3;end if (v41==(438 -(145 + 293))) then v42=v23();v43=v23();v41=767 -(745 + 21) ;end end end local function v25(v48) local v49=0 -0 ;local v50;local v51;while true do if (v49==(1 + 0)) then v50=v3(v16,v18,(v18 + v48) -(2 -1) );v18=v18 + v48 ;v49=2;end if (v49==(1416 -(447 + 966))) then return v6(v51);end if (v49==(5 -3)) then v51={};for v111=2 -1 , #v50 do v51[v111]=v2(v1(v3(v50,v111,v111)));end v49=1820 -(1703 + 114) ;end if (v49==0) then v50=nil;if  not v48 then v48=v23();if (v48==(701 -(376 + 325))) then return "";end end v49=(1 + 0) -0 ;end end end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v52=(function() return function(v89,v90,v91,v92,v93,v94,v95,v96) local v89=(function() return 0;end)();local v90=(function() return;end)();local v91=(function() return;end)();while true do if (v89== #"}") then if (v90== #".") then v91=(function() return v92()~=0 ;end)();elseif (v90==(4 -2)) then v91=(function() return v93();end)();elseif (v90~= #"xxx") then else v91=(function() return v94();end)();end v95[v96]=(function() return v91;end)();break;end if (0==v89) then local v118=(function() return 0 -0 ;end)();local v119=(function() return;end)();while true do if (v118==0) then v119=(function() return 0;end)();while true do if (v119==(242 -(187 + 54))) then v89=(function() return  #"<";end)();break;end if (v119==0) then v90=(function() return v92();end)();v91=(function() return nil;end)();v119=(function() return 781 -(162 + 618) ;end)();end end break;end end end end return v89,v90,v91,v92,v93,v94,v95,v96;end;end)();local v53=(function() return function(v97,v98,v99) local v100=(function() return 0;end)();local v101=(function() return;end)();while true do if (v100==0) then v101=(function() return 0;end)();while true do if (v101==(0 + 0)) then local v126=(function() return 0 + 0 ;end)();while true do if (v126==(0 -0)) then v97[v98-#"." ]=(function() return v99();end)();return v97,v98,v99;end end end end break;end end end;end)();local v54=(function() return {};end)();local v55=(function() return {};end)();local v56=(function() return {};end)();local v57=(function() return {v54,v55,nil,v56};end)();local v58=(function() return v23();end)();local v59=(function() return {};end)();for v67= #".",v58 do FlatIdent_27957,Type,Cons,v21,v24,v25,v59,v67=(function() return v52(FlatIdent_27957,Type,Cons,v21,v24,v25,v59,v67);end)();end v57[ #"gha"]=(function() return v21();end)();for v68= #"/",v23() do local v69=(function() return v21();end)();if (v20(v69, #"\\", #".")~=0) then else local v105=(function() return 0;end)();local v106=(function() return;end)();local v107=(function() return;end)();local v108=(function() return;end)();while true do if (v105==(1 -0)) then local v120=(function() return 0 + 0 ;end)();local v121=(function() return;end)();while true do if (v120==(1636 -(1373 + 263))) then v121=(function() return 1000 -(451 + 549) ;end)();while true do if (v121~=0) then else v108=(function() return {v22(),v22(),nil,nil};end)();if (v106==0) then local v131=(function() return 0 + 0 ;end)();local v132=(function() return;end)();while true do if (v131==0) then v132=(function() return 0;end)();while true do if (v132==(0 -0)) then v108[ #"gha"]=(function() return v22();end)();v108[ #".com"]=(function() return v22();end)();break;end end break;end end elseif (v106== #">") then v108[ #"-19"]=(function() return v23();end)();elseif (v106==2) then v108[ #"xxx"]=(function() return v23() -((2 -0)^(1400 -(746 + 638))) ;end)();elseif (v106== #"gha") then local v985=(function() return 0 + 0 ;end)();local v986=(function() return;end)();while true do if (v985~=(0 -0)) then else v986=(function() return 0;end)();while true do if (v986==(341 -(218 + 123))) then v108[ #"gha"]=(function() return v23() -((1583 -(1535 + 46))^(16 + 0)) ;end)();v108[ #"http"]=(function() return v22();end)();break;end end break;end end end v121=(function() return 1 + 0 ;end)();end if (v121~=1) then else v105=(function() return 2;end)();break;end end break;end end end if (3~=v105) then else if (v20(v107, #"19(", #"-19")== #",") then v108[ #"xnxx"]=(function() return v59[v108[ #"0313"]];end)();end v54[v68]=(function() return v108;end)();break;end if (v105==0) then local v123=(function() return 0;end)();local v124=(function() return;end)();while true do if (v123~=(560 -(306 + 254))) then else v124=(function() return 0;end)();while true do if (v124==1) then v105=(function() return 1;end)();break;end if (v124~=(0 + 0)) then else v106=(function() return v20(v69,2, #"91(");end)();v107=(function() return v20(v69, #"0313",11 -5 );end)();v124=(function() return 1468 -(899 + 568) ;end)();end end break;end end end if (v105==2) then if (v20(v107, #"\\", #"/")~= #"|") then else v108[2 + 0 ]=(function() return v59[v108[4 -2 ]];end)();end if (v20(v107,605 -(268 + 335) ,292 -(60 + 230) )== #"|") then v108[ #"91("]=(function() return v59[v108[ #"91("]];end)();end v105=(function() return 3;end)();end end end end for v70= #"]",v23() do v55,v70,v28=(function() return v53(v55,v70,v28);end)();end return v57;end local function v29(v61,v62,v63) local v64=v61[573 -(426 + (219 -73)) ];local v65=v61[1 + 1 ];local v66=v61[3];return function(...) local v71=v64;local v72=v65;local v73=v66;local v74=v27;local v75=1457 -(282 + 1174) ;local v76= -(812 -(569 + 242));local v77={};local v78={...};local v79=v12("#",...) -(1 + (816 -(666 + 150))) ;local v80={};local v81={};for v102=(274 + 750) -(706 + 112 + 206) ,v79 do if ((v102>=v73) or (4519<=4409)) then v77[v102-v73 ]=v78[v102 + 1 ];else v81[v102]=v78[v102 + (1252 -(721 + 530)) ];end end local v82=(v79-v73) + (1272 -(945 + 326)) ;local v83;local v84;while true do v83=v71[v75];v84=v83[1];if (v84<=(534 -320)) then if (v84<=106) then if ((4514>=1479) and (v84<=52)) then if (v84<=(23 + 2)) then if (v84<=(712 -(271 + 429))) then if ((v84<=(5 + 0)) or (3414<=210)) then if (v84<=(1502 -(1408 + 92))) then if ((v84<=0) or (349<=242)) then v81[v83[2]]=v62[v83[1089 -(461 + 625) ]];elseif (v84>1) then local v987=0;while true do if (v987==(1290 -(993 + 183 + 112))) then v81[v83[1 + 1 ]]=v81[v83[1174 -(418 + 753) ]] + v81[v83[4]] ;v75=v75 + 1 ;v83=v71[v75];v987=2 + 1 ;end if (v987==(1 + 3)) then v81[v83[(2 -1) + 1 ]]=v83[1 + 2 ];v75=v75 + ((45 + 485) -(406 + 123)) ;v83=v71[v75];v987=5;end if (v987==(1769 -(1749 + 20))) then v81[v83[2]]=v81[v83[1 + 2 ]] + v81[v83[(1230 + 96) -((1701 -(424 + 28)) + 73) ]] ;v75=v75 + 1 + (602 -(407 + 195)) ;v83=v71[v75];v987=1146 -((978 -512) + (2189 -1510)) ;end if (v987==1) then v81[v83[(3 + 1) -2 ]]=v83[8 -5 ];v75=v75 + 1 ;v83=v71[v75];v987=1902 -(5 + 101 + 1794) ;end if (v987==((4 -2) + 4)) then v81[v83[2]]=v83[1 + 2 ];break;end if ((14 -9)==v987) then v81[v83[5 -3 ]]=v81[v83[117 -(4 + 110) ]][v81[v83[588 -(57 + 527) ]]];v75=v75 + (1428 -(41 + (2609 -1223))) ;v83=v71[v75];v987=109 -(17 + 86) ;end if (v987==3) then v81[v83[2 + 0 ]]=v81[v83[6 -3 ]][v81[v83[11 -7 ]]];v75=v75 + 1 ;v83=v71[v75];v987=170 -(122 + 44) ;end end elseif ((2209>=1935) and (v83[(2 + 0) -0 ]==v83[4])) then v75=v75 + (3 -2) ;else v75=v83[3 + (0 -0) ];end elseif (v84<=3) then v81[v83[2]]=v81[v83[1 + 2 ]][v81[v83[7 -3 ]]];v75=v75 + 1 ;v83=v71[v75];v81[v83[2]]=v83[68 -(30 + 35) ];v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[1259 -(1043 + 214) ]]=v81[v83[3]][v81[v83[15 -11 ]]];v75=v75 + (1213 -(323 + 889)) ;v83=v71[v75];v81[v83[5 -3 ]][v81[v83[3]]]=v81[v83[4]];v75=v75 + (581 -(361 + 219)) ;v83=v71[v75];v81[v83[322 -(53 + 267) ]]=v83[1 + 2 ];v75=v75 + ((1167 -753) -(15 + 398)) ;v83=v71[v75];v81[v83[984 -(18 + 964) ]]=v81[v83[11 -8 ]] + v81[v83[3 + 0 + 1 ]] ;v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[852 -(20 + 830) ]]=v83[3 + 0 ];v75=v75 + 1 ;v83=v71[v75];v81[v83[2]]=v81[v83[129 -(116 + 10) ]] + v81[v83[1 + 3 ]] ;v75=v75 + (739 -(542 + 196)) ;v83=v71[v75];v81[v83[3 -1 ]]=v83[(3 -2) + 2 ];v75=v75 + 1 + 0 ;v83=v71[v75];v75=v83[2 + 1 ];elseif ((v84==(10 -6)) or (1369==4914)) then local v988=(0 -0) -0 ;while true do if ((1555 -(1126 + 425))==v988) then v75=v75 + (406 -(118 + 287)) ;v83=v71[v75];v81[v83[(5 + 2) -5 ]]=v81[v83[(3849 -2725) -(118 + 1003) ]] + v81[v83[11 -7 ]] ;v75=v75 + (378 -(142 + 235)) ;v988=22 -17 ;end if (v988==(1 + 0)) then v75=v75 + (978 -(553 + 424)) ;v83=v71[v75];v81[v83[3 -1 ]]=v83[3 + 0 ];v75=v75 + 1 + 0 ;v988=2 + 0 ;end if ((2 + 1)==v988) then v81[v83[2]][v81[v83[2 + 1 ]]]=v81[v83[8 -4 ]];v75=v75 + (2 -1) ;v83=v71[v75];v81[v83[4 -2 ]]=v83[3];v988=4;end if ((v988==(1 + 1)) or (3459>=4887)) then v83=v71[v75];v81[v83[9 -7 ]]=v81[v83[756 -(239 + 514) ]][v81[v83[2 + 2 ]]];v75=v75 + ((5113 -3783) -(797 + 532)) ;v83=v71[v75];v988=3 + 0 ;end if (v988==5) then v83=v71[v75];v81[v83[1 + 1 ]]=v83[3];v75=v75 + (2 -1) ;v83=v71[v75];v988=1208 -(373 + 829) ;end if ((v988==(737 -(476 + 255))) or (2964<=78)) then v81[v83[1132 -(369 + 761) ]]=v81[v83[2 + 1 + 0 ]] + v81[v83[6 -2 ]] ;v75=v75 + (1 -0) ;v83=v71[v75];v81[v83[240 -(64 + 174) ]]=v83[3];break;end if (v988==(0 + 0)) then v81[v83[2 -0 ]]=v83[339 -(144 + 192) ];v75=v75 + (217 -(42 + 174)) ;v83=v71[v75];v81[v83[2 + 0 + 0 ]]=v81[v83[3]][v81[v83[4 + 0 ]]];v988=(1193 -(274 + 918)) + 0 ;end end elseif (v81[v83[1506 -(363 + 1141) ]]<v81[v83[1584 -(1183 + 21 + 376) ]]) then v75=v75 + ((9 -7) -1) ;else v75=v83[3 + 0 + 0 ];end elseif (v84<=(6 + 2)) then if ((v84<=((1590 + 391) -(1913 + (1875 -(1030 + 783))))) or (730==3621)) then local v153=0 + 0 + 0 ;local v154;while true do if (v153==(2 -1)) then v83=v71[v75];v154=v83[1935 -(565 + 1368) ];v81[v154]=v81[v154]();v153=7 -5 ;end if ((301<4219) and (v153==((2607 -944) -(1477 + 184)))) then v75=v75 + 1 ;v83=v71[v75];v81[v83[2 -0 ]]=v81[v83[3 + 0 ]] -v83[860 -(564 + 292) ] ;v153=4 -1 ;end if (v153==(11 -(1 + 6))) then v75=v75 + (305 -(244 + 60)) ;v83=v71[v75];do return;end break;end if ((v153==0) or (1855>2408)) then v154=nil;v81[v83[2]]=v62[v83[3 + 0 ]];v75=v75 + 1 ;v153=1;end if (v153==(479 -(14 + 27 + 435))) then v75=v75 + (1002 -(938 + 63)) ;v83=v71[v75];do return v81[v83[2 + 0 ]];end v153=1129 -((1639 -(167 + 536)) + 189) ;end end elseif ((3635<4494) and (v84==(3 + 4))) then local v989=(776 + 837) -(1565 + 48) ;while true do if (v989==4) then v81[v83[2 + 0 ]][v81[v83[1141 -(782 + 356) ]]]=v81[v83[4]];v75=v75 + ((723 -455) -(176 + 91)) ;v83=v71[v75];v989=5;end if (v989==((13 + 4) -10)) then v81[v83[2 -0 ]]=v81[v83[1095 -(975 + 117) ]][v83[3 + 1 ]];v75=v75 + (1876 -(157 + 1718)) ;v83=v71[v75];v989=7 + 1 ;end if (v989==3) then v81[v83[6 -4 ]]=v81[v83[10 -7 ]][v81[v83[1022 -(697 + 321) ]]];v75=v75 + (2 -1) ;v83=v71[v75];v989=8 -4 ;end if (v989==0) then v81[v83[2]]=v81[v83[6 -3 ]][v83[4]];v75=v75 + 1 + 0 ;v83=v71[v75];v989=1456 -(1304 + 151) ;end if (v989==(9 -4)) then v81[v83[5 -3 ]]=v81[v83[3]] + v83[1231 -(322 + 905) ] ;v75=v75 + (612 -(602 + 9)) ;v83=v71[v75];v989=(926 + 269) -(449 + 740) ;end if (v989==((331 + 550) -(826 + 46))) then v81[v83[949 -(245 + 702) ]][v81[v83[9 -6 ]]]=v81[v83[2 + 2 ]];break;end if (v989==8) then v81[v83[1900 -(260 + 1638) ]]=v81[v83[443 -(382 + 58) ]][v83[4]];v75=v75 + (3 -2) ;v83=v71[v75];v989=3 + 5 + 1 ;end if ((2295>=592) and (2==v989)) then v81[v83[3 -1 ]]=v81[v83[8 -(16 -11) ]][v83[1209 -(902 + 303) ]];v75=v75 + (1 -0) ;v83=v71[v75];v989=6 -3 ;end if ((1 + 0)==v989) then v81[v83[2]]=v81[v83[3]][v81[v83[4]]];v75=v75 + (1691 -(1121 + 569)) ;v83=v71[v75];v989=2;end if ((2728==2728) and (v989==6)) then v81[v83[216 -(22 + 192) ]]=v81[v83[686 -(483 + 200) ]][v81[v83[4]]];v75=v75 + (1464 -(1404 + 59)) ;v83=v71[v75];v989=19 -12 ;end end else local v990;local v991,v992;local v993;v81[v83[2 -0 ]]=v62[v83[768 -(468 + 297) ]];v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[2]]=v81[v83[3]];v75=v75 + 1 ;v83=v71[v75];v81[v83[564 -(334 + 216 + 12) ]]=v83[(518 -(471 + 37)) -7 ];v75=v75 + ((1028 -(557 + 469)) -1) ;v83=v71[v75];v81[v83[2 -(0 + 0) ]]=v81[v83[3]] + v81[v83[8 -4 ]] ;v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[238 -(141 + 95) ]]=v83[3 + 0 ];v75=v75 + 1 ;v83=v71[v75];v81[v83[2]]=v81[v83[(12 -5) -4 ]][v81[v83[9 -5 ]]];v75=v75 + 1 + 0 ;v83=v71[v75];v993=v83[5 -3 ];v991,v992=v74(v81[v993](v13(v81,v993 + 1 + 0 ,v83[2 + 1 ])));v76=(v992 + v993) -(1 -0) ;v990=0 + 0 ;for v4318=v993,v76 do local v4319=163 -(92 + 71) ;while true do if (v4319==(0 + 0)) then v990=v990 + (1 -0) ;v81[v4318]=v991[v990];break;end end end v75=v75 + ((2143 -(513 + 864)) -(574 + 191)) ;v83=v71[v75];v993=v83[2 + 0 ];v81[v993]=v81[v993](v13(v81,v993 + (2 -1) ,v76));v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[851 -(254 + 595) ]][v81[v83[3]]]=v81[v83[130 -(55 + 71) ]];v75=v75 + (1 -0) ;v83=v71[v75];v81[v83[1792 -(573 + (3265 -2048)) ]]=v83[3];v75=v75 + (2 -1) ;v83=v71[v75];v75=v83[3];end elseif (v84<=(1 + 9)) then if (v84==(13 -4)) then local v1012=939 -(714 + 225) ;while true do if (v1012==(0 -0)) then v81[v83[2 -0 ]]=v83[3];v75=v75 + 1 + 0 ;v83=v71[v75];v1012=1 -0 ;end if (v1012==(809 -(118 + (1640 -952)))) then v81[v83[2]]=v83[3];v75=v75 + (49 -(25 + 23)) ;v83=v71[v75];v1012=1 + 3 ;end if (v1012==(1888 -(927 + 959))) then v81[v83[3 -1 ]]=v62[v83[10 -7 ]];v75=v75 + 1 ;v83=v71[v75];v1012=3;end if ((v1012==(736 -(16 + 716))) or (1582<=1424)) then v81[v83[3 -1 ]]=v81[v83[100 -(11 + 86) ]][v81[v83[9 -5 ]]];v75=v75 + (286 -(175 + 110)) ;v83=v71[v75];v1012=12 -7 ;end if (v1012==(29 -23)) then v81[v83[1798 -(503 + 1293) ]][v81[v83[402 -(187 + 212) ]]]=v81[v83[(89 -(35 + 43)) -7 ]];v75=v75 + 1 + 0 ;v83=v71[v75];v1012=1068 -(810 + 251) ;end if (v1012==(5 + 2)) then v81[v83[1 + (1115 -(209 + 905)) ]]=v83[3 + 0 + 0 ];break;end if (v1012==(534 -(43 + 490))) then v81[v83[735 -(711 + 22) ]]=v81[v83[11 -8 ]][v81[v83[(1599 -(555 + 181)) -(240 + 619) ]]];v75=v75 + 1 ;v83=v71[v75];v1012=2;end if (v1012==(2 + 3)) then v81[v83[2 -0 ]]=v81[v83[1 + 2 ]][v81[v83[1748 -((1958 -614) + 400) ]]];v75=v75 + 1 ;v83=v71[v75];v1012=411 -(255 + 150) ;end end else local v1013=0 + 0 ;while true do if (v1013==6) then v81[v83[2 + 0 ]]=v83[12 -9 ];v75=v75 + (3 -(987 -(953 + 32))) ;v83=v71[v75];v75=v83[1742 -(404 + 1335) ];break;end if (v1013==(406 -(183 + (874 -651)))) then v81[v83[2 -(0 -0) ]]=v81[v83[2 + 1 ]][v81[v83[2 + 2 ]]];v75=v75 + 1 ;v83=v71[v75];v81[v83[339 -(10 + 327) ]]=v81[v83[3]][v81[v83[3 + 1 ]]];v75=v75 + 1 ;v1013=339 -(118 + 220) ;end if (((1 + 2)==v1013) or (393>=2017)) then v81[v83[451 -(108 + 341) ]]=v81[v83[3]][v81[v83[2 + 2 ]]];v75=v75 + (4 -3) ;v83=v71[v75];v81[v83[3 -1 ]]=v83[1496 -(711 + 782) ];v75=v75 + (1 -0) ;v1013=473 -(270 + 199) ;end if (v1013==(2 + (5 -2))) then v75=v75 + (1820 -(580 + 1239)) ;v83=v71[v75];v81[v83[2]][v81[v83[8 -5 ]]]=v81[v83[4 + 0 ]];v75=v75 + 1 ;v83=v71[v75];v1013=1 + 5 ;end if (v1013==((504 -(412 + 91)) + 1)) then v75=v75 + 1 ;v83=v71[v75];v81[v83[2]]=v81[v83[(279 -(53 + 219)) -4 ]] + v81[v83[4]] ;v75=v75 + 1 + (1649 -(145 + 1504)) ;v83=v71[v75];v1013=1170 -(645 + 522) ;end if (v1013==4) then v83=v71[v75];v81[v83[1792 -(1010 + (1007 -(101 + 126))) ]]=v81[v83[3 + 0 ]][v81[v83[19 -15 ]]];v75=v75 + (2 -1) ;v83=v71[v75];v81[v83[1838 -(1045 + 791) ]]={};v1013=12 -7 ;end if ((v1013==((1 + 0) -0)) or (4350==423)) then v83=v71[v75];v81[v83[2 + 0 ]][v81[v83[629 -(153 + 473) ]]]=v81[v83[509 -(351 + 154) ]];v75=v75 + (1575 -(1281 + 293)) ;v83=v71[v75];v81[v83[2]]=v83[269 -(28 + 238) ];v1013=4 -2 ;end end end elseif (v84==11) then v81[v83[(1214 + 347) -(1381 + 178) ]]=v81[v83[3 + 0 + 0 ]] + v81[v83[4]] ;v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[2]]=v81[v83[2 + 0 + 1 ]][v81[v83[4]]];v75=v75 + (3 -2) ;v83=v71[v75];v81[v83[2]]=v83[3];v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[472 -(381 + 89) ]]=v81[v83[3 + 0 ]][v81[v83[4]]];v75=v75 + 1 ;v83=v71[v75];v75=v83[3];else local v1021;v81[v83[2 + 0 ]]=v81[v83[3 + (0 -0) ]] + v81[v83[6 -2 ]] ;v75=v75 + (1157 -(1074 + 82)) ;v83=v71[v75];v81[v83[2]]=v81[v83[6 -3 ]][v81[v83[4]]];v75=v75 + (1785 -((1183 -(752 + 217)) + 1570)) ;v83=v71[v75];v81[v83[1457 -(990 + 465) ]]=v83[2 + 1 ];v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[2 + 0 ]]=v81[v83[3]][v81[v83[15 -11 ]]];v75=v75 + ((3493 -1766) -((4744 -3076) + 58)) ;v83=v71[v75];v81[v83[2]]=v81[v83[629 -(512 + 114) ]][v81[v83[4]]];v75=v75 + (2 -1) ;v83=v71[v75];v81[v83[3 -1 ]]=v83[(2 + 8) -7 ];v75=v75 + (2 -1) + 0 ;v83=v71[v75];v81[v83[1 + 1 ]]=v81[v83[3 + 0 ]] + v81[v83[13 -9 ]] ;v75=v75 + (1995 -((401 -292) + 1885)) ;v83=v71[v75];v81[v83[1471 -(1269 + 200) ]]=v81[v83[5 -(1 + 1) ]][v81[v83[819 -(98 + 717) ]]];v75=v75 + 1 ;v83=v71[v75];v1021=v83[2];v81[v1021]=v81[v1021](v81[v1021 + (827 -((2145 -(103 + 1240)) + 24)) ]);v75=v75 + ((1 + 0) -0) ;v83=v71[v75];v81[v83[2 -0 ]][v81[v83[1 + 2 ]]]=v81[v83[4 + 0 ]];v75=v75 + 1 ;v83=v71[v75];v81[v83[2]]=v83[1 + 2 ];v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[5 -3 ]]=v81[v83[(1 + 8) -6 ]] + v81[v83[2 + 2 ]] ;v75=v75 + 1 + 0 ;v83=v71[v75];v81[v83[1 + 1 + 0 ]]=v83[3 + 0 ];v75=v75 + 1 ;v83=v71[v75];v75=v83[1214 -(16 + 1195) ];end elseif (v84<=(9 + 9)) then if (v84<=(1448 -(797 + 636))) then if (v84<=13) then local v155=0 -0 ;while true do if ((3161>=2045) and (v155==(1622 -(1427 + 192)))) then v81[v83[2]]=v83[2 + 1 ];v75=v75 + (2 -1) ;v83=v71[v75];v81[v83[2 + 0 ]]=v81[v83[2 + 1 ]][v81[v83[330 -(192 + 134) ]]];v155=1280 -(316 
+
+local Window = Rayfield:CreateWindow({
+   Name = "Vexalix",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Chào mừng bạn đến với script",
+   LoadingSubtitle = "by vexalix25",
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Vexalix25"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Vexalix",
+      Subtitle = "Key System",
+      Note = "Chúc Bạn Một Ngày Vui Vẻ Và thành Công Cảm Ơn Bạn đã Sử Dụng. =) Key Là: fix", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"fix"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+local function getLocalTime(offset)
+    return os.date("!%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
+end
+
+local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Click",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Autoclick-/refs/heads/main/Auto"))()
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Anti Afk",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Antiafk/refs/heads/main/Antiafk"))()
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Server list",
+   Callback = function()
+   loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Hitbox+esp",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Hitboxesp/refs/heads/main/.github/workflows/blank"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Just A Script 🌞",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "IY",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shader",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Giảm Đồ Họa",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fixlag/refs/heads/main/Fixlag"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Quay tay -(Hand Spinner)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Simple Spy",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+local RemoteSpy = loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
+RemoteSpy:Start()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Premium DEX",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pawslurr/Premium-Dex-V1/refs/heads/main/Dex%20Premium"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shit Lock",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Shitlock/refs/heads/main/Shit%20lock"))("Spider Script")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Delta Keyboard Crack",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Invisible",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Stream Sniper",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
+   end,
+})
+local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Nexus Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CrazyHub123/NexusHubRevival/refs/heads/main/Main.lua"))()
+   end,
+})
+
+local scriptText = [[
+AZTREON-pwa38QZ-BoPMF5Vo
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Key Aztreon Hub",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "Aztreon Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aal3-33/Hub/refs/heads/main/Gitscripts/aztreonhub.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Sterling Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zayn31214/name/refs/heads/main/SterlingNew"))()
+   end,
+})
+
+
+local Tab = Window:CreateTab("Script UGC", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Collect For Ugc",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Haxxxxxxxxxxxx/AutoFarmFast/refs/heads/main/collectforugc.gay"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Collect Gems For Ugc",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/collectgems.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Click For Ugc 2",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NooobieBlox/ClickForUGC2/main/LimitedUGC"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Sword Fighting Simulator X",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/r4mpage4/UGCLIMITED/refs/heads/main/swordfight.lua"))();
+   end,
+})
+
+local Tab = Window:CreateTab("Find Fruit", 4483362458) -- Title, Image
+
+local scriptText = [[
+_G.Webhook = ""
+
+_G.MetodeTeleport = "Instant" --"Tween" or "Instant"
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/BloxFruit/FindFruit.lua')))()
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Thunder Z Hub| Finder Fruits",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+local scriptText = [[
+ServerHopTimer = 5
+TeleportSafe = true
+Webhook = "Your Webhook Here"
+_G.Version="Fruit Farm"loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Zenith Hub Fruit Farm",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+local Tab = Window:CreateTab("Hop", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "AK Gaming Hop",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-HOP"))()    
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Datthg Hop Boss",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatTHGHopBoss"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "Cuttay Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/cuttayhub/refs/heads/main/workcuttayhub"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "Teddy Hub Hop",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Min Gaming Hop Boss",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
+
+local label15 = Tab:CreateLabel("lưu ý nếu chơi chung với người tỉ lệ ban cao")
+local label15 = Tab:CreateLabel("Note: If you play with other people, the ban rate is very high.")
+local scriptText = [[
+https://ads.luarmor.net/get_key?for=Leaf_Hub__Daily_Key-IMmpYwRKcYxy
+]]
+
+local Button = Tab:CreateButton({
+   Name = "GET KEY Leaf Hub",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Leaf Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://leafhub.dev/script.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Old Toilet Tower Defense", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Spawn Unit",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/OldToiletTD"))()
+   end,
+})
+
+local Tab = Window:CreateTab("CLIENT", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Discord",
+   Callback = function()
+      -- Sao chép liên kết vào bộ nhớ tạm
+      setclipboard("https://discord.gg/gz6WFuMg")
+      print("Link đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Arceus VNG",
+   Callback = function()
+      -- Sao chép liên kết vào bộ nhớ tạm
+      setclipboard("https://www.mediafire.com/file/d2z61eerih9qtc6/Roblox_-_VNG_Arceus_X_NEO_1.5.3.apk/file")
+      print("Link đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+local Tab = Window:CreateTab("Pet Simulator 99", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Spawner Gems",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleischv2/Ps99script/refs/heads/main/Hjn'))()
+   end,
+})
+
+local Tab = Window:CreateTab("Blox Fruit", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "W Azure",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Wazure/refs/heads/main/Wazure"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "HOHO HUB V4",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/hohohub/refs/heads/main/Hoho%20hub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "ATTACK HUB",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Attackhub/refs/heads/main/Attackhub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Blue X Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Blue-X-Hub/refs/heads/main/.github/workflows/Bluexhub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Teddy Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHubv2"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Turbo Lite",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Main.lua"))()
+   end,
+})
+local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Tsuo Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Rubu Roblox V4",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/RuBuV4.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Astral v1",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Vxeze Hub By Dex Skibidi",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/Skidlamcho.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "TheBillDevHub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/selciawashere/screepts/refs/heads/main/BFKEYSYS",true))()
+   end,
+})
+
+local scriptText = [[
+https://ads.luarmor.net/get_key?for=VHFslhWdrPey
+]]
+
+local Button = Tab:CreateButton({
+   Name = "GET KEY Banana Hub",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+
+local scriptText = [[
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "Nhập của m vào" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+]]
+
+local Button = Tab:CreateButton({
+   Name = "Banana Hub",
+   Callback = function()
+      setclipboard(scriptText)
+      print("Script đã được sao chép vào bộ nhớ tạm!")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Redz",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Redz/refs/heads/main/REDZ"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Speed X Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Rubu V3",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Xeno Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Al Chemy Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Min gaming",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinCE"))()
+   end,
+}) 
+
+local Button = Tab:CreateButton({
+   Name = "Hiru Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Dev-Hiru/refs/heads/main/HiruHub.lua"))()
+   end,
+}) 
+
+local Button = Tab:CreateButton({
+   Name = "Datthg V1",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV1"))()
+   end,
+}) 
+
+local Button = Tab:CreateButton({
+   Name = "Zis Roblox",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb10"))()
+   end,
+}) 
+
+local Tab = Window:CreateTab("Kaitun Fruit Blox Fruit", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Simple Script (patched)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/WorkSmiplescript/refs/heads/main/.github/work"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Pet Go", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Speed X Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+
+local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Rael Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
+   end,
+})
+
+Rayfield:LoadConfiguration()
