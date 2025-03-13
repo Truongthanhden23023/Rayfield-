@@ -1,35 +1,4 @@
-local player = game.Players.LocalPlayer
-local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
-gui.ResetOnSpawn = false
-
--- Tạo nút icon
-local iconButton = Instance.new("ImageButton", gui)
-iconButton.Size = UDim2.new(0, 50, 0, 50)
-iconButton.Position = UDim2.new(0, 10, 0, 10) -- Góc trên trái
-iconButton.Image = "rbxassetid://79092334123520" -- Thay ID ảnh theo ý muốn
-iconButton.BackgroundTransparency = 1
-
-iconButton.InputChanged:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseMovement then
-        dragInput = input
-    end
-end)
-
-game:GetService("UserInputService").InputChanged:Connect(function(input)
-    if input == dragInput and dragging then
-        local delta = input.Position - dragStart
-        iconButton.Position = UDim2.new(
-            startPos.X.Scale, startPos.X.Offset + delta.X,
-            startPos.Y.Scale, startPos.Y.Offset + delta.Y
-        )
-    end
-end)
-
--- Bật/tắt GUI khi nhấn vào icon
-iconButton.MouseButton1Click:Connect(function()
-    targetGui.Visible = not targetGui.Visible
-end)
-
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 shared.LoaderTitle = "WELCOME TO Vexalix";
 shared.LoaderKeyFrames = {
