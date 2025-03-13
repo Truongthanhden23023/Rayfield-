@@ -23,7 +23,7 @@ local Toggle = MainTab:CreateToggle({
     CurrentValue = true, -- Mặc định hiển thị
     Flag = "IconToggle",
     Callback = function(Value)
-        Icon.Visible = Value -- Nếu bật thì hiện, tắt thì ẩn
+        Icon.Visible = true -- Nếu bật thì hiện, tắt thì ẩn
     end
 })
 
