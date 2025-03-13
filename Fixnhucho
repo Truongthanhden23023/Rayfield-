@@ -1,4 +1,31 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local Window = Rayfield:CreateWindow({
+    Name = "Vexalix",
+    LoadingTitle = "By vexalix25",
+    LoadingSubtitle = "Toggle UI",
+    ConfigurationSaving = false
+})
+
+local MainTab = Window:CreateTab("Toggle UI", 4483362458) -- Tạo tab với icon
+
+-- Tạo hình ảnh (icon) để toggle
+local Icon = Instance.new("ImageLabel")
+Icon.Parent = game.CoreGui
+Icon.Size = UDim2.new(0, 50, 0, 50)
+Icon.Position = UDim2.new(0.5, -25, 0.5, -25)
+Icon.BackgroundTransparency = 1
+Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
+Icon.Visible = true -- Ban đầu hiển thị
+
+-- Toggle Button để Show/Hide icon
+local Toggle = MainTab:CreateToggle({
+    Name = "Show/Hide UI",
+    CurrentValue = true, -- Mặc định hiển thị
+    Flag = "IconToggle",
+    Callback = function(Value)
+        Icon.Visible = Value -- Nếu bật thì hiện, tắt thì ẩn
+    end
+})
 
 shared.LoaderTitle = "WELCOME TO Vexalix";
 shared.LoaderKeyFrames = {
