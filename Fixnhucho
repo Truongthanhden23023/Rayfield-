@@ -17,22 +17,21 @@ Icon.BackgroundTransparency = 1
 Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
 Icon.Visible = true -- Ban đầu hiển thị
 
--- Toggle Button để Show/Hide icon
-local Toggle = MainTab:CreateToggle({
-    Name = "bật",
-    CurrentValue = true, -- Mặc định hiển thị
-    Flag = "IconToggle",
-    Callback = function(Value)
-        Icon.Visible = false -- Nếu bật thì hiện, tắt thì ẩn
+
+local MainTab = Window:CreateTab("Toggle UI", 4483362458) -- Tạo tab với icon
+
+local Button = Tab:CreateButton({
+   Name = "bật",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+Icon.Visible = value -- Nếu bật thì hiện, tắt thì ẩn
     end
 })
 
--- Toggle Button để Show/Hide icon
-local Toggle = MainTab:CreateToggle({
-    Name = "tắt",
-    CurrentValue = true, -- Mặc định hiển thị
-    Flag = "IconToggle",
-    Callback = function(Value)
+local Button = Tab:CreateButton({
+   Name = "tắt",
+   Callback = function()
+   -- The function that takes place when the button is pressed
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 local Window = Rayfield:CreateWindow({
     Name = "Vexalix",
@@ -52,16 +51,17 @@ Icon.BackgroundTransparency = 1
 Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
 Icon.Visible = true -- Ban đầu hiển thị
 
--- Toggle Button để Show/Hide icon
-local Toggle = MainTab:CreateToggle({
-    Name = "bật",
-    CurrentValue = true, -- Mặc định hiển thị
-    Flag = "IconToggle",
-    Callback = function(Value)
-        Icon.Visible = false -- Nếu bật thì hiện, tắt thì ẩn
+
+local MainTab = Window:CreateTab("Toggle UI", 4483362458) -- Tạo tab với icon
+
+local Button = Tab:CreateButton({
+   Name = "bật",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+Icon.Visible = value -- Nếu bật thì hiện, tắt thì ẩn
     end
 })
-    end
+   end,
 })
 
 shared.LoaderTitle = "WELCOME TO Vexalix";
@@ -456,6 +456,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
    end,
 })
+
 local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
