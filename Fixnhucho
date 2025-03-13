@@ -1,16 +1,20 @@
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
--- Tạo hình ảnh (icon) để toggle
 local Icon = Instance.new("ImageLabel")
 Icon.Parent = game.CoreGui
 Icon.Size = UDim2.new(0, 50, 0, 50)
 Icon.Position = UDim2.new(0.5, -25, 0.5, -25)
 Icon.BackgroundTransparency = 1
-Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
+Icon.Image = "rbxassetid://79092334123520" -- Thay ID ảnh của bạn
 Icon.Visible = true -- Ban đầu hiển thị
-        Icon.Visible = Value -- Nếu bật thì hiện, tắt thì ẩn
-    end
-})
 
+local isIconVisible = true -- Trạng thái của icon
+
+-- Toggle icon khi nhấn phím T
+game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+    if not gameProcessed and input.KeyCode == Enum.KeyCode.T then
+        isIconVisible = not isIconVisible
+        Icon.Visible = isIconVisible
+    end
+end)
 
 shared.LoaderTitle = "WELCOME TO Vexalix";
 shared.LoaderKeyFrames = {
