@@ -1,14 +1,14 @@
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 local Window = Rayfield:CreateWindow({
-    Name = "Vexalix",
-    LoadingTitle = "VEXALIX25",
-    LoadingSubtitle = "vexalix25",
+    Name = "Toggle Icon UI",
+    LoadingTitle = "Rayfield UI",
+    LoadingSubtitle = "Example",
     ConfigurationSaving = false
 })
 
-local MainTab = Window:CreateTab("Bật/Tắt", 4483362458) -- Tạo tab chính
+local MainTab = Window:CreateTab("Main", 4483362458) -- Tạo tab với icon
 
--- Tạo icon (ImageLabel)
+-- Tạo hình ảnh (icon) để toggle
 local Icon = Instance.new("ImageLabel")
 Icon.Parent = game.CoreGui
 Icon.Size = UDim2.new(0, 50, 0, 50)
@@ -17,11 +17,15 @@ Icon.BackgroundTransparency = 1
 Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
 Icon.Visible = false -- Ban đầu hiển thị
 
--- Toggle Button trong Rayfield để hiển thị/ẩn icon
+-- Toggle Button để Show/Hide icon
 local Toggle = MainTab:CreateToggle({
     Name = "Show/Hide Icon",
     CurrentValue = true, -- Mặc định hiển thị
-    Flag 
+    Flag = "IconToggle",
+    Callback = function(Value)
+        Icon.Visible = Value -- Nếu bật thì hiện, tắt thì ẩn
+    end
+})
 
 
 shared.LoaderTitle = "WELCOME TO Vexalix";
