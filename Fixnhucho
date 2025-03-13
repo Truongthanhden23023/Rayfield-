@@ -6,7 +6,7 @@ Icon.BackgroundTransparency = 1
 Icon.Image = "rbxassetid://79092334123520" -- Thay ID ảnh của bạn
 Icon.Visible = true -- Ban đầu hiển thị
 
-local isIconVisible = true -- Trạng thái của icon
+local isIconVisible = false -- Trạng thái của icon
 
 -- Toggle icon khi nhấn phím T
 game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
