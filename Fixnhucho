@@ -15,7 +15,7 @@ Icon.Size = UDim2.new(0, 50, 0, 50)
 Icon.Position = UDim2.new(0.5, -25, 0.5, -25)
 Icon.BackgroundTransparency = 1
 Icon.Image = "rbxassetid://79092334123520" -- Thay bằng ID hình ảnh của bạn
-Icon.Visible = false -- Ban đầu hiển thị
+Icon.Visible = true -- Ban đầu hiển thị
 
 -- Toggle Button để Show/Hide icon
 local Toggle = MainTab:CreateToggle({
