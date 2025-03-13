@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-shared.LoaderTitle = "WELCOME TO ALL Script";
+shared.LoaderTitle = "WELCOME TO Vexalix";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -104,7 +104,7 @@ local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "ALL SCRIPT",
+    Text = "Vexalix",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
@@ -225,10 +225,10 @@ v5:Destroy();
 
 
 local Window = Rayfield:CreateWindow({
-   Name = "ALL Script",
+   Name = "Vexalix",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
+   LoadingTitle = "Chào mừng bạn đến với script",
+   LoadingSubtitle = "by vexalix25",
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
