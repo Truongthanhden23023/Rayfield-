@@ -1,24 +1,24 @@
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "My UI"
+})
+
 local button = game.Players.LocalPlayer.PlayerGui.ScreenGui.ToggleButton
 local isVisible = true
 
--- ID của icon (thay bằng Asset ID trên Roblox)
+-- ID của icon (cần thay bằng Asset ID trên Roblox)
 local iconOn = "rbxassetid://129964146720519"  -- UI đang bật
 local iconOff = "rbxassetid://129964146720519" -- UI đang tắt
 
--- Lấy UI Rayfield đã có sẵn
-local RayfieldUI = game.CoreGui:FindFirstChild("Rayfield")
+-- Đặt icon ban đầu
+button.Image = iconOn 
 
-if RayfieldUI then
-    button.Image = iconOn -- Đặt icon ban đầu
-
-    button.MouseButton1Click:Connect(function()
-        isVisible = not isVisible
-        RayfieldUI.Enabled = isVisible
-        button.Image = isVisible and iconOn or iconOff
-    end)
-else
-    warn("Rayfield UI chưa được tạo!")
-end
+button.MouseButton1Click:Connect(function()
+    isVisible = not isVisible
+    Window.Main.Visible = isVisible
+    button.Image = isVisible and iconOn or iconOff
+end)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/android-/refs/heads/main/editcondimemay"))()
 
