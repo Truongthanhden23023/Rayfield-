@@ -3,9 +3,10 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
--- 🖥️ Tạo ScreenGui
+-- 🖥️ Tạo ScreenGui (Giữ UI khi chết)
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = playerGui
+screenGui.ResetOnSpawn = false -- 🛡️ Giữ UI khi reset nhân vật
 
 -- 🔤 Hàm tạo TextLabel
 local function createLabel(text, position)
@@ -28,13 +29,13 @@ local function createIcon(imageId, position)
     icon.Size = UDim2.new(0.1, 0, 0.1, 0) -- Icon lớn hơn
     icon.Position = position
     icon.BackgroundTransparency = 1
-    icon.Image = "rbxassetid://129964146720519" .. imageId
+    icon.Image = "rbxassetid://111281710445018" .. imageId
 
     -- Kiểm tra nếu icon không hiển thị
     task.spawn(function()
         wait(1)
         if icon.Image == "" or icon.ImageRectSize == Vector2.new(0, 0) then
-            icon.Image = "rbxassetid://129964146720519" -- Icon dự phòng nếu ID sai
+            icon.Image = "rbxassetid://111281710445018" -- Icon dự phòng nếu ID sai
         end
     end)
 
@@ -42,21 +43,21 @@ local function createIcon(imageId, position)
 end
 
 -- 🏗️ Tạo UI
-local dayIcon = createIcon("129964146720519", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
+local dayIcon = createIcon("111281710445018", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
 local daysLabel = createLabel("Ngày chơi: " .. player.AccountAge, UDim2.new(0.12, 0, 0.02, 0))
 local fpsLabel = createLabel("FPS: Đang đo...", UDim2.new(0.02, 0, 0.12, 0))
 local timeLabel = createLabel("Giờ: Đang lấy...", UDim2.new(0.02, 0, 0.22, 0))
 local dateLabel = createLabel("Ngày: Đang lấy...", UDim2.new(0.02, 0, 0.32, 0)) -- Ngày/Tháng/Năm
 local clientLabel = createLabel("Client: " .. player.Name, UDim2.new(0.02, 0, 0.42, 0))
 
--- 🎨 Rainbow toàn bộ chữ (trừ icon)
+-- 🎨 Rainbow toàn bộ chữ (trừ icon) - Giữ sau khi chết
 task.spawn(function()
     local hue = 0
-    while task.wait(0.1) do
+    while true do -- Không dừng lại sau khi chết
+        task.wait(0.1)
         hue = (hue + 10) % 360
         local rainbowColor = Color3.fromHSV(hue / 360, 1, 1)
 
-        -- Chỉ đổi màu chữ, không đổi màu icon
         for _, label in ipairs(screenGui:GetChildren()) do
             if label:IsA("TextLabel") then
                 label.TextColor3 = rainbowColor
@@ -67,13 +68,15 @@ end)
 
 -- ⏳ Cập nhật FPS, Giờ, Ngày/Tháng/Năm
 task.spawn(function()
-    while task.wait(1) do
-        local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
-        fpsLabel.Text = "FPS: " .. fps
+    while true do
+        task.wait(1)
+        fpsLabel.Text = "FPS: " .. math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
     end
 end)
+
 task.spawn(function()
-    while task.wait(1) do
+    while true do
+        task.wait(1)
         timeLabel.Text = "Giờ: " .. os.date("%H:%M:%S")
         dateLabel.Text = "Ngày: " .. os.date("%d/%m/%Y") -- Ngày/Tháng/Năm
     end
@@ -84,6 +87,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 
 -- Tạo ScreenGui
 local screenGui = Instance.new("ScreenGui")
+screenGui.ResetOnSpawn = false -- Ngăn mất text khi chết
 screenGui.Parent = playerGui
 
 -- Tạo TextLabel
@@ -91,7 +95,7 @@ local textLabel = Instance.new("TextLabel")
 textLabel.Parent = screenGui
 textLabel.Size = UDim2.new(0.5, 0, 0.1, 0) -- Kích thước
 textLabel.Position = UDim2.new(0.25, 0, 0.1, 0) -- Vị trí
-textLabel.Text = "Vexalix25 Community -https://discord.gg/U2YCa5Sh"
+textLabel.Text = "Vexalix25 Community - https://discord.gg/U2YCa5Sh"
 textLabel.TextScaled = true
 textLabel.Font = Enum.Font.SourceSansBold
 textLabel.TextColor3 = Color3.fromRGB(255, 0, 0) -- Màu ban đầu
