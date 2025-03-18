@@ -335,7 +335,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Just A Script đŸŒ",
+   Name = "Just A Script 🌜",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
    -- The function that takes place when the button is pressed
@@ -359,7 +359,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Giáº£m Äá»“ Há»a",
+   Name = "Giảm đồ họa",
    Callback = function()
    -- The function that takes place when the button is pressed
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fixlag/refs/heads/main/Fixlag"))()
@@ -587,7 +587,7 @@ local Button = Tab:CreateButton({
    Name = "GET KEY Leaf Hub",
    Callback = function()
       setclipboard(scriptText)
-      print("Script Ä‘Ă£ Ä‘Æ°á»£c sao chĂ©p vĂ o bá»™ nhá»› táº¡m!")
+      print("Script Đã Được Cao Chép Vào Bản Tạm Nhớ!")
    end,
 })
 
@@ -614,18 +614,18 @@ local Tab = Window:CreateTab("CLIENT", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
    Name = "Discord",
    Callback = function()
-      -- Sao chĂ©p liĂªn káº¿t vĂ o bá»™ nhá»› táº¡m
+      -- Sao Chép Link Vào Bản Tạm Nhớ 
       setclipboard("https://discord.gg/gz6WFuMg")
-      print("Link Ä‘Ă£ Ä‘Æ°á»£c sao chĂ©p vĂ o bá»™ nhá»› táº¡m!")
+      print("Link Đã Được Sao Chép Vào Bản Tạm Nhớ!")
    end,
 })
 
 local Button = Tab:CreateButton({
    Name = "Arceus VNG",
    Callback = function()
-      -- Sao chĂ©p liĂªn káº¿t vĂ o bá»™ nhá»› táº¡m
+      -- Sao Chép Vào Bản Tạm Nhớ 
       setclipboard("https://www.mediafire.com/file/d2z61eerih9qtc6/Roblox_-_VNG_Arceus_X_NEO_1.5.3.apk/file")
-      print("Link Ä‘Ă£ Ä‘Æ°á»£c sao chĂ©p vĂ o bá»™ nhá»› táº¡m!")
+      print("Link Đã Sao Chép Vào Bản Tạm Nhớ!")
    end,
 })
 local Tab = Window:CreateTab("Pet Simulator 99", 4483362458) -- Title, Image
@@ -737,14 +737,14 @@ local Button = Tab:CreateButton({
    Name = "GET KEY Banana Hub",
    Callback = function()
       setclipboard(scriptText)
-      print("Script Ä‘Ă£ Ä‘Æ°á»£c sao chĂ©p vĂ o bá»™ nhá»› táº¡m!")
+      print("Script Đã Sao Chép Vào Bản Tạm Nhớ!")
    end,
 })
 
 
 local scriptText = [[
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
-getgenv().Key = "Nháº­p cá»§a m vĂ o" 
+getgenv().Key = "Nhap key cua ban vao ;)" 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
 ]]
 
@@ -752,7 +752,7 @@ local Button = Tab:CreateButton({
    Name = "Banana Hub",
    Callback = function()
       setclipboard(scriptText)
-      print("Script Ä‘Ă£ Ä‘Æ°á»£c sao chĂ©p vĂ o bá»™ nhá»› táº¡m!")
+      print("Script Đã Sao Chép Vào Bản Tạm Nhớ!")
    end,
 })
 
