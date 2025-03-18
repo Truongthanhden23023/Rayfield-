@@ -1,5 +1,46 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+function detectVirtualEnvironment()
+    local suspicious_files = {
+        "/system/bin/su",       -- Kiểm tra root
+        "/system/xbin/su",
+        "/sbin/su",
+        "/system/app/Superuser.apk",
+        "/system/etc/init.d/99SuperSUDaemon"
+    }
+
+    for _, file in ipairs(suspicious_files) do
+        local f = io.open(file, "r")
+        if f then
+            io.close(f)
+            return true  -- Phát hiện root hoặc môi trường ảo
+        end
+    end
+    return false
+end
+
+function spoofDeviceInfo()
+    local fake_info = {
+        device = "Samsung Galaxy S24",
+        model = "SM-S921B",
+        android_version = "14",
+        ip_address = "192.168.1.100"
+    }
+    return fake_info
+end
+
+local myDevice = spoofDeviceInfo()
+print("Thiết bị giả mạo: " .. myDevice.device)
+print("Model: " .. myDevice.model)
+print("Phiên bản Android: " .. myDevice.android_version)
+print("IP giả: " .. myDevice.ip_address)
+
+if detectVirtualEnvironment() then
+    print("Cảnh báo: Phát hiện môi trường giả lập hoặc thiết bị root!")
+else
+    print("Không phát hiện root hoặc giả lập.")
+end
+
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
