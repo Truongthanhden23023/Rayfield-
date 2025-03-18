@@ -22,20 +22,20 @@ local function createLabel(text, position)
     return label
 end
 
--- 🖼️ Hàm tạo Icon (Không có rainbow)
+-- 🖼️ Hàm tạo Icon (To & Vuông)
 local function createIcon(imageId, position)
     local icon = Instance.new("ImageLabel")
     icon.Parent = screenGui
-    icon.Size = UDim2.new(0.1, 0, 0.1, 0) -- Icon lớn hơn
+    icon.Size = UDim2.new(0.15, 0, 0.15, 0) -- 📌 Icon TO và VUÔNG
     icon.Position = position
     icon.BackgroundTransparency = 1
-    icon.Image = "rbxassetid://111281710445018" .. imageId
+    icon.Image = "rbxassetid://137385818147689" .. imageId
 
     -- Kiểm tra nếu icon không hiển thị
     task.spawn(function()
         wait(1)
         if icon.Image == "" or icon.ImageRectSize == Vector2.new(0, 0) then
-            icon.Image = "rbxassetid://111281710445018" -- Icon dự phòng nếu ID sai
+            icon.Image = "rbxassetid://137385818147689" -- Icon dự phòng nếu ID sai
         end
     end)
 
@@ -43,8 +43,8 @@ local function createIcon(imageId, position)
 end
 
 -- 🏗️ Tạo UI
-local dayIcon = createIcon("111281710445018", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
-local daysLabel = createLabel("Ngày chơi: " .. player.AccountAge, UDim2.new(0.12, 0, 0.02, 0))
+local dayIcon = createIcon("137385818147689", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
+local daysLabel = createLabel("Ngày chơi: " .. player.AccountAge, UDim2.new(0.18, 0, 0.02, 0))
 local fpsLabel = createLabel("FPS: Đang đo...", UDim2.new(0.02, 0, 0.12, 0))
 local timeLabel = createLabel("Giờ: Đang lấy...", UDim2.new(0.02, 0, 0.22, 0))
 local dateLabel = createLabel("Ngày: Đang lấy...", UDim2.new(0.02, 0, 0.32, 0)) -- Ngày/Tháng/Năm
