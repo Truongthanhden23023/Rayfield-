@@ -298,6 +298,14 @@ end
 
 local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
 
+local Button = Tab:CreateButton({
+   Name = "Sound UI By: Vexalix25",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Sound/refs/heads/main/Sound))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
 local Toggle = Tab:CreateToggle({
    Name = "Auto Click",
    CurrentValue = false,
