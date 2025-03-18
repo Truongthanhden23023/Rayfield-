@@ -48,7 +48,7 @@ local daysLabel = createLabel("Ngày chơi: " .. player.AccountAge, UDim2.new(0.
 local fpsLabel = createLabel("FPS: Đang đo...", UDim2.new(0.02, 0, 0.12, 0))
 local timeLabel = createLabel("Giờ: Đang lấy...", UDim2.new(0.02, 0, 0.22, 0))
 local dateLabel = createLabel("Ngày: Đang lấy...", UDim2.new(0.02, 0, 0.32, 0)) -- Ngày/Tháng/Năm
-local clientLabel = createLabel("Client: " .. player.Name, UDim2.new(0.02, 0, 0.42, 0))
+local clientLabel = createLabel("ID Người Dùng: " .. player.Name, UDim2.new(0.02, 0, 0.42, 0))
 
 -- 🎨 Rainbow toàn bộ chữ (trừ icon) - Giữ sau khi chết
 task.spawn(function()
