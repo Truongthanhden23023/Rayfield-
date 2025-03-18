@@ -780,6 +780,23 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
 local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
+   Name = "Xeter Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+getgenv().Version = "V2"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Bắp Red",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
    Name = "Maru Hub Fake",
    Callback = function()
    -- The function that takes place when the button is pressed
