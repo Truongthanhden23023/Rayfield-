@@ -808,7 +808,7 @@ loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
 })
 
 local Button = Tab:CreateButton({
-   Name = "Min gaming (Tiếng Việt)",
+   Name = "Min gaming (tieng viet)",
    Callback = function()
    -- The function that takes place when the button is pressed
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinAV"))()
