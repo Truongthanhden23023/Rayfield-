@@ -28,13 +28,13 @@ local function createIcon(imageId, position)
     icon.Size = UDim2.new(0.1, 0, 0.1, 0) -- Icon lớn hơn
     icon.Position = position
     icon.BackgroundTransparency = 1
-    icon.Image = "rbxassetid://" .. imageId
+    icon.Image = "rbxassetid://129964146720519" .. imageId
 
     -- Kiểm tra nếu icon không hiển thị
     task.spawn(function()
         wait(1)
         if icon.Image == "" or icon.ImageRectSize == Vector2.new(0, 0) then
-            icon.Image = "rbxassetid://10931493507" -- Icon dự phòng nếu ID sai
+            icon.Image = "rbxassetid://129964146720519" -- Icon dự phòng nếu ID sai
         end
     end)
 
@@ -42,7 +42,7 @@ local function createIcon(imageId, position)
 end
 
 -- 🏗️ Tạo UI
-local dayIcon = createIcon("7072718367", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
+local dayIcon = createIcon("129964146720519", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
 local daysLabel = createLabel("Ngày chơi: " .. player.AccountAge, UDim2.new(0.12, 0, 0.02, 0))
 local fpsLabel = createLabel("FPS: Đang đo...", UDim2.new(0.02, 0, 0.12, 0))
 local timeLabel = createLabel("Giờ: Đang lấy...", UDim2.new(0.02, 0, 0.22, 0))
@@ -61,8 +61,8 @@ task.spawn(function()
             if label:IsA("TextLabel") then
                 label.TextColor3 = rainbowColor
             end
-        end    
-
+        end
+    end
 end)
 
 -- ⏳ Cập nhật FPS, Giờ, Ngày/Tháng/Năm
