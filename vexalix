@@ -18,7 +18,7 @@ local function createLabel(text, position)
     label.TextScaled = true
     label.Font = Enum.Font.SourceSansBold
     label.BackgroundTransparency = 1
-    label.TextXAlignment = Enum.TextXAlignment.Left
+    label.TextXAlignment = Enum.TextXAlignment.Left -- ✅ Đúng
     return label
 end
 
