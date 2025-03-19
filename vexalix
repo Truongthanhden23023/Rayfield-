@@ -780,6 +780,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs
 local Tab = Window:CreateTab("Blox Fruit TAB2", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
+   Name = "Monster Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy2511-coder/MonsterHub/refs/heads/main/MonsterHub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
    Name = "Xeter Hub",
    Callback = function()
    -- The function that takes place when the button is pressed
