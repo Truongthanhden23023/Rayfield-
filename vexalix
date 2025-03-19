@@ -709,7 +709,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Teddy Hub Hop",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/TeddyHop-FREE"))()
    -- The function that takes place when the button is pressed
    end,
 })
