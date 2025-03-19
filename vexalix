@@ -1,4 +1,5 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Tutorial",
 
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
@@ -18,8 +19,8 @@ local function createLabel(text, position)
     label.TextScaled = true
     label.Font = Enum.Font.SourceSansBold
     label.BackgroundTransparency = 1
-    label.TextXAlignment = Enum.TextXAlignment.Left
-    return label
+    label.TextXAlignment = Enum.TextXA
+    return lab
 end
 
 -- 🖼️ Hàm tạo Icon (To & Vuông)
