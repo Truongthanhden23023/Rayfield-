@@ -437,6 +437,14 @@ end
 local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
 
 local Button = Tab:CreateButton({
+   Name = "Textbox Execute",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/execute/refs/heads/main/vexalix25"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
    Name = "Lửa Phát Sáng",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fire/refs/heads/main/phatsang"))()
