@@ -1,6 +1,63 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Parent = player:WaitForChild("PlayerGui")
+
+-- Tạo Frame chính
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.3, 0, 0.1, 0)
+frame.Position = UDim2.new(0.65, 0, 0.8, 0) -- Điều chỉnh vị trí theo ảnh
+frame.BackgroundTransparency = 0.3
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.Parent = gui
+
+-- Tạo ImageLabel (ảnh mèo)
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(0.2, 0, 1, 0)
+imageLabel.Position = UDim2.new(0, 0, 0, 0)
+imageLabel.Image = "rbxassetid://137385818147689" -- Thay bằng ID ảnh của bạn
+imageLabel.Parent = frame
+
+-- Tạo TextLabel (Tên)
+local nameLabel = Instance.new("TextLabel")
+nameLabel.Size = UDim2.new(0.8, 0, 0.5, 0)
+nameLabel.Position = UDim2.new(0.2, 0, 0, 0)
+nameLabel.Text = "Vexalix"
+nameLabel.TextScaled = true
+nameLabel.Font = Enum.Font.SourceSansBold
+nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameLabel.BackgroundTransparency = 1
+nameLabel.Parent = frame
+
+-- Tạo TextLabel (Trạng thái loading)
+local statusLabel = Instance.new("TextLabel")
+statusLabel.Size = UDim2.new(0.8, 0, 0.5, 0)
+statusLabel.Position = UDim2.new(0.2, 0, 0.5, 0)
+statusLabel.Text = "Loading..."
+statusLabel.TextScaled = true
+statusLabel.Font = Enum.Font.SourceSans
+statusLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+statusLabel.BackgroundTransparency = 1
+statusLabel.Parent = frame
+
+-- Hiệu ứng đổi từ "Loading..." sang "Loading Done!"
+wait(3)
+statusLabel.Text = "Loading Done!"
+
+-- Hiệu ứng biến mất dần
+wait(2) -- Đợi 2 giây trước khi biến mất
+for i = 1, 10 do
+    frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+    nameLabel.TextTransparency = nameLabel.TextTransparency + 0.1
+    statusLabel.TextTransparency = statusLabel.TextTransparency + 0.1
+    imageLabel.ImageTransparency = imageLabel.ImageTransparency + 0.1
+    wait(0.1)
+end
+
+frame:Destroy() -- Xóa UI khỏi màn hình
+
+local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 -- 🖥️ Tạo ScreenGui (Giữ UI khi chết)
