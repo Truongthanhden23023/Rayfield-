@@ -437,9 +437,9 @@ end
 local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
 
 local Button = Tab:CreateButton({
-   Name = "Avatar Outfit's",
+   Name = "touch Mouse",
    Callback = function()
-loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute("Script18")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Fakemouse/refs/heads/main/Mouse")()
    -- The function that takes place when the button is pressed
    end,
 })
