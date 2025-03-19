@@ -1,5 +1,32 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+-- Create a ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create a TextLabel for the title
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Size = UDim2.new(0, 400, 0, 100)
+titleLabel.Position = UDim2.new(0.5, -200, 0.2, 0)
+titleLabel.BackgroundTransparency = 1
+titleLabel.Text = "Vexalix25"
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White color
+titleLabel.TextSize = 50
+titleLabel.Font = Enum.Font.GothamBold
+titleLabel.TextStrokeTransparency = 0.6
+titleLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)  -- Black stroke for effect
+titleLabel.TextScaled = true
+titleLabel.Parent = screenGui
+
+-- Fade out effect
+local TweenService = game:GetService("TweenService")
+local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)  -- 3 seconds fade
+
+local goal = {TextTransparency = 0.7}  -- Make text more transparent (opacity 30%)
+local tween = TweenService:Create(titleLabel, tweenInfo, goal)
+
+tween:Play()
+
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
