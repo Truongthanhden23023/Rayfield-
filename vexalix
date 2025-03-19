@@ -1,13 +1,4 @@
-local ui = game.Players.LocalPlayer.PlayerGui:WaitForChild("UI TOGGLE") -- Thay "UIToggle" bằng tên UI của bạn
-local toggleButton = game.Players.LocalPlayer.PlayerGui:WaitForChild("ToggleButton") -- Thay "ToggleButton" bằng tên nút bạn muốn dùng để thay đổi UI
-
--- Hàm để bật/tắt UI
-local function toggleUI()
-    ui.Enabled = not ui.Enabled
-end
-
--- Gắn sự kiện nhấn nút
-toggleButton.MouseButton1Click:Connect(toggleUI)
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
