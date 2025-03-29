@@ -611,6 +611,15 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest3D/ZirconHub/refs/heads/main/StreamSniper.lua"))()
    end,
 })
+local Tab = Window:CreateTab("Arise Crossover", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = ":)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SKOIXLL/SKYLOLAND/refs/heads/main/Load.lua"))()
+   end,
+})
 
 local Tab = Window:CreateTab("Blue Lock Rivals", 4483362458) -- Title, Image
 
