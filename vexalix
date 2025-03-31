@@ -556,10 +556,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/f
 })
 
 local Button = Tab:CreateButton({
-   Name = "Quay tay -(Hand Spinner)",
+   Name = "Jerk Off 🥵",
    Callback = function()
    -- The function that takes place when the button is pressed
-loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
    end,
 })
 
