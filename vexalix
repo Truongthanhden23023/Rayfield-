@@ -437,6 +437,14 @@ end
 local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
 
 local Button = Tab:CreateButton({
+   Name = "Ban Hammer",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRbx/BanHammer/refs/heads/main/Rbx.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
    Name = "touch Mouse",
    Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Fakemouse/refs/heads/main/Mouse"))()
