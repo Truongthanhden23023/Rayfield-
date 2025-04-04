@@ -23,7 +23,7 @@ imageLabel.Parent = frame
 local nameLabel = Instance.new("TextLabel")
 nameLabel.Size = UDim2.new(0.8, 0, 0.5, 0)
 nameLabel.Position = UDim2.new(0.2, 0, 0, 0)
-nameLabel.Text = "Vexalix"
+nameLabel.Text = "Vexalix Update"
 nameLabel.TextScaled = true
 nameLabel.Font = Enum.Font.SourceSansBold
 nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -631,7 +631,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Vermzky/VermzHub/refs
 
 
 local Button = Tab:CreateButton({
-   Name = ":)",
+   Name = "SkyHub",
    Callback = function()
    -- The function that takes place when the button is pressed
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SKOIXLL/SKYLOLAND/refs/heads/main/Load.lua"))()
