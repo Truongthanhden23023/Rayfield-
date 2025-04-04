@@ -792,6 +792,14 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "Auto Win",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TwoGunVolley/Dedrail/refs/heads/main/Protected_8860927939362090.txt"))()
+   end,
+})
+
 local label15 = Tab:CreateLabel("lÆ°u Ă½ náº¿u chÆ¡i chung vá»›i ngÆ°á»i tá»‰ lá»‡ ban cao")
 local label15 = Tab:CreateLabel("Note: If you play with other people, the ban rate is very high.")
 local scriptText = [[
