@@ -16,7 +16,7 @@ frame.Parent = gui
 local imageLabel = Instance.new("ImageLabel")
 imageLabel.Size = UDim2.new(0.2, 0, 1, 0)
 imageLabel.Position = UDim2.new(0, 0, 0, 0)
-imageLabel.Image = "rbxassetid://137385818147689" -- Thay bằng ID ảnh của bạn
+imageLabel.Image = "rbxassetid://79092334123520" -- Thay bằng ID ảnh của bạn
 imageLabel.Parent = frame
 
 -- Tạo TextLabel (Tên)
@@ -86,13 +86,13 @@ local function createIcon(imageId, position)
     icon.Size = UDim2.new(0.15, 0, 0.15, 0) -- 📌 Icon TO và VUÔNG
     icon.Position = position
     icon.BackgroundTransparency = 1
-    icon.Image = "rbxassetid://137385818147689" .. imageId
+    icon.Image = "rbxassetid://79092334123520" .. imageId
 
     -- Kiểm tra nếu icon không hiển thị
     task.spawn(function()
         wait(1)
         if icon.Image == "" or icon.ImageRectSize == Vector2.new(0, 0) then
-            icon.Image = "rbxassetid://137385818147689" -- Icon dự phòng nếu ID sai
+            icon.Image = "rbxassetid://79092334123520" -- Icon dự phòng nếu ID sai
         end
     end)
 
@@ -101,11 +101,11 @@ end
 
 -- 🏗️ Tạo UI
 local dayIcon = createIcon("137385818147689", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngày chơi
-local daysLabel = createLabel("Ngày chơi: " .. player.AccountAge, UDim2.new(0.18, 0, 0.02, 0))
+local daysLabel = createLabel("play day: " .. player.AccountAge, UDim2.new(0.18, 0, 0.02, 0))
 local fpsLabel = createLabel("FPS: Đang đo...", UDim2.new(0.02, 0, 0.12, 0))
-local timeLabel = createLabel("Giờ: Đang lấy...", UDim2.new(0.02, 0, 0.22, 0))
-local dateLabel = createLabel("Ngày: Đang lấy...", UDim2.new(0.02, 0, 0.32, 0)) -- Ngày/Tháng/Năm
-local clientLabel = createLabel("ID: " .. player.Name, UDim2.new(0.02, 0, 0.42, 0))
+local timeLabel = createLabel("Hour: Đang lấy...", UDim2.new(0.02, 0, 0.22, 0))
+local dateLabel = createLabel("Day: Đang lấy...", UDim2.new(0.02, 0, 0.32, 0)) -- Ngày/Tháng/Năm
+local clientLabel = createLabel("UserID: " .. player.Name, UDim2.new(0.02, 0, 0.42, 0))
 
 -- 🎨 Rainbow toàn bộ chữ (trừ icon) - Giữ sau khi chết
 task.spawn(function()
@@ -134,8 +134,8 @@ end)
 task.spawn(function()
     while true do
         task.wait(1)
-        timeLabel.Text = "Giờ: " .. os.date("%H:%M:%S")
-        dateLabel.Text = "Ngày: " .. os.date("%d/%m/%Y") -- Ngày/Tháng/Năm
+        timeLabel.Text = "Hour: " .. os.date("%H:%M:%S")
+        dateLabel.Text = "Day: " .. os.date("%d/%m/%Y") -- Ngày/Tháng/Năm
     end
 end)
 
@@ -265,7 +265,7 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://71584141139900",
+    Image = "rbxassetid://79092334123520",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
@@ -397,7 +397,7 @@ v5:Destroy();
 local Window = Rayfield:CreateWindow({
    Name = "Vexalix",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Chào mừng đến với Vexalix :)",
+   LoadingTitle = "Welcome To Vexalix :)",
    LoadingSubtitle = "by vexalix25",
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
