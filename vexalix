@@ -57,6 +57,119 @@ end
 
 frame:Destroy() -- XĂ³a UI khá»i mĂ n hĂ¬nh
 
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- đŸ–¥ï¸ Táº¡o ScreenGui (Giá»¯ UI khi cháº¿t)
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = playerGui
+screenGui.ResetOnSpawn = false -- đŸ›¡ï¸ Giá»¯ UI khi reset nhĂ¢n váº­t
+
+-- đŸ”¤ HĂ m táº¡o TextLabel
+local function createLabel(text, position)
+    local label = Instance.new("TextLabel")
+    label.Parent = screenGui
+    label.Size = UDim2.new(0.35, 0, 0.06, 0) -- KĂ­ch thÆ°á»›c chá»¯
+    label.Position = position
+    label.Text = text
+    label.TextScaled = true
+    label.Font = Enum.Font.SourceSansBold
+    label.BackgroundTransparency = 1
+    label.TextXAlignment = Enum.TextXAlignment.Left -- âœ… ÄĂºng
+    return label
+end
+
+-- đŸ–¼ï¸ HĂ m táº¡o Icon (To & VuĂ´ng)
+local function createIcon(imageId, position)
+    local icon = Instance.new("ImageLabel")
+    icon.Parent = screenGui
+    icon.Size = UDim2.new(0.15, 0, 0.15, 0) -- đŸ“Œ Icon TO vĂ  VUĂ”NG
+    icon.Position = position
+    icon.BackgroundTransparency = 1
+    icon.Image = "rbxassetid://79092334123520" .. imageId
+
+    -- Kiá»ƒm tra náº¿u icon khĂ´ng hiá»ƒn thá»‹
+    task.spawn(function()
+        wait(1)
+        if icon.Image == "" or icon.ImageRectSize == Vector2.new(0, 0) then
+            icon.Image = "rbxassetid://79092334123520" -- Icon dá»± phĂ²ng náº¿u ID sai
+        end
+    end)
+
+    return icon
+end
+
+-- đŸ—ï¸ Táº¡o UI
+local dayIcon = createIcon("137385818147689", UDim2.new(0.01, 0, 0.02, 0)) -- Icon ngĂ y chÆ¡i
+local daysLabel = createLabel("play day: " .. player.AccountAge, UDim2.new(0.18, 0, 0.02, 0))
+local fpsLabel = createLabel("FPS: Äang Ä‘o...", UDim2.new(0.02, 0, 0.12, 0))
+local timeLabel = createLabel("Hour: Äang láº¥y...", UDim2.new(0.02, 0, 0.22, 0))
+local dateLabel = createLabel("Day: Äang láº¥y...", UDim2.new(0.02, 0, 0.32, 0)) -- NgĂ y/ThĂ¡ng/NÄƒm
+local clientLabel = createLabel("UserID: " .. player.Name, UDim2.new(0.02, 0, 0.42, 0))
+
+-- đŸ¨ Rainbow toĂ n bá»™ chá»¯ (trá»« icon) - Giá»¯ sau khi cháº¿t
+task.spawn(function()
+    local hue = 0
+    while true do -- KhĂ´ng dá»«ng láº¡i sau khi cháº¿t
+        task.wait(0.1)
+        hue = (hue + 10) % 360
+        local rainbowColor = Color3.fromHSV(hue / 360, 1, 1)
+
+        for _, label in ipairs(screenGui:GetChildren()) do
+            if label:IsA("TextLabel") then
+                label.TextColor3 = rainbowColor
+            end
+        end
+    end
+end)
+
+-- â³ Cáº­p nháº­t FPS, Giá», NgĂ y/ThĂ¡ng/NÄƒm
+task.spawn(function()
+    while true do
+        task.wait(1)
+        fpsLabel.Text = "FPS: " .. math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
+    end
+end)
+
+task.spawn(function()
+    while true do
+        task.wait(1)
+        timeLabel.Text = "Hour: " .. os.date("%H:%M:%S")
+        dateLabel.Text = "Day: " .. os.date("%d/%m/%Y") -- NgĂ y/ThĂ¡ng/NÄƒm
+    end
+end)
+
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- Táº¡o ScreenGui
+local screenGui = Instance.new("ScreenGui")
+screenGui.ResetOnSpawn = false -- NgÄƒn máº¥t text khi cháº¿t
+screenGui.Parent = playerGui
+
+-- Táº¡o TextLabel
+local textLabel = Instance.new("TextLabel")
+textLabel.Parent = screenGui
+textLabel.Size = UDim2.new(0.5, 0, 0.1, 0) -- KĂ­ch thÆ°á»›c
+textLabel.Position = UDim2.new(0.25, 0, 0.1, 0) -- Vá»‹ trĂ­
+textLabel.Text = "Vexalix25 Community - https://discord.gg/U2YCa5Sh"
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.TextColor3 = Color3.fromRGB(255, 0, 0) -- MĂ u ban Ä‘áº§u
+textLabel.BackgroundTransparency = 1 -- Trong suá»‘t
+
+-- HĂ m Ä‘á»•i mĂ u rainbow
+local function rainbowText()
+    local hue = 0
+    while task.wait(0.1) do -- Äá»•i mĂ u má»—i 0.1 giĂ¢y
+        hue = (hue + 10) % 360 -- TÄƒng hue Ä‘á»ƒ táº¡o hiá»‡u á»©ng chuyá»ƒn mĂ u
+        textLabel.TextColor3 = Color3.fromHSV(hue / 360, 1, 1) -- Chuyá»ƒn mĂ u
+    end
+end
+
+-- Cháº¡y hiá»‡u á»©ng rainbow
+task.spawn(rainbowText)
+
 shared.LoaderTitle = "WELCOME TO Vexalix";
 shared.LoaderKeyFrames = {
     [1] = {
@@ -419,7 +532,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Just A Script",
+   Name = "Just A Script đŸŒœ",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
    -- The function that takes place when the button is pressed
@@ -443,7 +556,7 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "reduce graphics",
+   Name = "Giáº£m Ä‘á»“ há»a",
    Callback = function()
    -- The function that takes place when the button is pressed
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fixlag/refs/heads/main/Fixlag"))()
@@ -502,4 +615,39 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 local Button = Tab:CreateButton({
    Name = "Stream Sniper",
    Callback = function()
-   -- The function that takes
+      -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb10"))()
+   end,
+}) 
+
+local Tab = Window:CreateTab("Kaitun Fruit Blox Fruit", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Simple Script (patched)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/WorkSmiplescript/refs/heads/main/.github/work"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Pet Go", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Speed X Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+
+local Tab = Window:CreateTab("Doors", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Rael Hub",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
+   end,
+})
+
+Rayfield:LoadConfiguration()
