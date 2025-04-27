@@ -1,1 +1,505 @@
-([[This file was protected with MoonSec V3]]):gsub('.+', (function(a) _gwqMexQmUCvU = a; end)); return(function(d,...)local n;local o;local z;local a;local r;local b;local e=24915;local l=0;local h={};while l<424 do l=l+1;while l<0x335 and e%0x2004<0x1002 do l=l+1 e=(e+453)%5965 local t=l+e if(e%0xf30)>0x798 then e=(e-0x3d5)%0x70ef while l<0x282 and e%0x1794<0xbca do l=l+1 e=(e+96)%37538 local a=l+e if(e%0x82a)>0x415 then e=(e-0x264)%0xa3db local e=74498 if not h[e]then h[e]=0x1 o=tonumber;end elseif e%2~=0 then e=(e*0x4e)%0xae79 local e=46108 if not h[e]then h[e]=0x1 r=(not r)and _ENV or r;end else e=(e*0x3ef)%0x6bb3 l=l+1 local e=28208 if not h[e]then h[e]=0x1 end end end elseif e%2~=0 then e=(e-0x5e)%0x402d while l<0x360 and e%0x1c02<0xe01 do l=l+1 e=(e*88)%11353 local t=l+e if(e%0x1268)<0x934 then e=(e+0xb4)%0x47a7 local e=1550 if not h[e]then h[e]=0x1 end elseif e%2~=0 then e=(e+0x110)%0x611a local e=85441 if not h[e]then h[e]=0x1 a=function(h)local e=0x01 local function l(l)e=e+l return h:sub(e-l,e-0x01)end while true do local h=l(0x01)if(h=="\5")then break end local e=n.byte(l(0x01))local e=l(e)if h=="\2"then e=b.LpiAstoy(e)elseif h=="\3"then e=e~="\0"elseif h=="\6"then r[e]=function(e,l)return d(8,nil,d,l,e)end elseif h=="\4"then e=r[e]elseif h=="\0"then e=r[e][l(n.byte(l(0x01)))];end local l=l(0x08)b[l]=e end end end else e=(e*0x265)%0x531c l=l+1 local e=87039 if not h[e]then h[e]=0x1 z="\4\8\116\111\110\117\109\98\101\114\76\112\105\65\115\116\111\121\0\6\115\116\114\105\110\103\4\99\104\97\114\73\80\77\69\101\105\120\118\0\6\115\116\114\105\110\103\3\115\117\98\110\99\89\75\68\98\77\86\0\6\115\116\114\105\110\103\4\98\121\116\101\104\79\102\80\118\74\122\67\0\5\116\97\98\108\101\6\99\111\110\99\97\116\100\66\79\122\97\89\97\80\0\5\116\97\98\108\101\6\105\110\115\101\114\116\70\115\89\73\77\86\112\103\5";end end end else e=(e+0x36e)%0x9813 l=l+1 while l<0x35e and e%0x1680<0xb40 do l=l+1 e=(e-528)%7461 local a=l+e if(e%0x1db4)<=0xeda then e=(e-0xe0)%0xc015 local e=47218 if not h[e]then h[e]=0x1 b={};end elseif e%2~=0 then e=(e+0x38d)%0xc24b local e=9928 if not h[e]then h[e]=0x1 n=string;end else e=(e-0x31d)%0x8334 l=l+1 local e=70797 if not h[e]then h[e]=0x1 r=getfenv and getfenv();end end end end end e=(e+390)%2756 end a(z);local l={};for e=0x0,0xff do local h=b.IPMEeixv(e);l[e]=h;l[h]=e;end local function t(e)return l[e];end local n=(function(d,a)local z,h=0x01,0x10 local l={{},{},{}}local r=-0x01 local e=0x01 local n=d while true do l[0x03][b.ncYKDbMV(a,e,(function()e=z+e return e-0x01 end)())]=(function()r=r+0x01 return r end)()if r==(0x0f)then r=""h=0x000 break end end local r=#a while e<r+0x01 do l[0x02][h]=b.ncYKDbMV(a,e,(function()e=z+e return e-0x01 end)())h=h+0x01 if h%0x02==0x00 then h=0x00 b.FsYIMVpg(l[0x01],(t((((l[0x03][l[0x02][0x00]]or 0x00)*0x10)+(l[0x03][l[0x02][0x01]]or 0x00)+n)%0x100)));n=d+n;end end return b.dBOzaYaP(l[0x01])end);a(n(93,"5_A6<rEmCv/&:XfF/C"));a(n(113,"5R_yCm:7xsjUWf >x>_C_QU)yfWym7f>?U>jsj_RUyCxUCCsWxmy;_xf_xC f fxmj 7xRRojVRRU CsUy:y>>x:jWy>ysWjm- C7s R:m>ssyCyU_yfWfoWjRsf_fUjC4fCmWxsx3=yjm_yU7y6WWCx _:j>>jyyfm: s R:C9:xsUmjUy_W_:C U77tm7f>WsU_>Wjm>x:RfRysCy_UjCRf>mU>f7sTsj__jUfmsW_CxGJs7R7jRfp:ym  x7UAUsxR U_yjUU:_W_7: xs_yRjRfj: :W x7xRRssWsW7C> ^:u>Rxx>Cx:/fj yUWWmR> _xUsU7y>f)mQ R7xJ>7>ZCs>ypfm: W:Rxjxj_yyUsCf _:jffx7>ysUysW>yU7s?jV:x7Rfjmy_f_m>>yx_  7xyRWRCR:m>x>v7yRmsxWCUCCsfU:j>W:C>m7xyfUWyjf :fs:"));local e=(-19008+(function()local a,l=0,1;(function(l,e,h)e(l(e,l,h),e(e,l,l),e(l,h,h))end)(function(h,r,e)if a>331 then return e end a=a+1 l=(l-312)%19747 if(l%350)<=175 then l=(l+896)%887 return h else return e(e(r,h,r)and e(h,h,h),h(e and r,r,e)and h(r,e,r),h(r,e,h and r)and h(r,r,r))end return r(e(h,e,e and h),e(e and h,h,e),r(e,e,e))end,function(e,r,h)if a>340 then return r end a=a+1 l=(l-22)%40008 if(l%1566)<=783 then return h else return h(h(r and r,r,h),h(e,e,r),h(r,e,e))end return e(e(e,h and e,h),h(e,r,h),h(e,e,e))end,function(h,e,r)if a>279 then return e end a=a+1 l=(l+847)%19870 if(l%842)<=421 then l=(l-922)%16910 return e(h(r and r,r,h)and h(h,h,e),e(r,r,h)and e(r and h,e,e),e(r,h,h)and h(r,e,r))else return e end return e end)return l;end)())local ae=(getfenv)or(function()return _ENV end);local t=b.sTJVXnxA or b.HKCUSUKi;local a=3;local z=4;local r=2;local g=1;local function ee(k,...)local s=n(e,"N0G.+reAa3zB?hl>>rBB3AA+r..zvBla?rl.lBA?A?Alra.hGezzz>B3a.Qxl+Ba3rAG3h30a0rB.e?}?r?>330AaBeA++G0>lhBha.BhB?r3.AK+hAre?rhl0h>>r??zAAArl.z?3?lhazG0>0+hAB+30?0?G3AAA+eh>lGlGBh3Ba+re.a<lz+B+zAaaeh+00.O.hBBB+erBlG?e3zAAr+arA.+>G?0lzGzAB0AB>alGB/aheza33.A.+GG*sz?aBBz3A0.3G>0Blr?3.?GB>+h0zlhrhhBa3e0>0hh3l3he?G3eAzrBl+al0l0AGrh0alh0Bea3ee+.eGe3+>0?B+?3elA.Ah+A?+B.A?r3.erAr3+M5Bl3h8zee*AZ+0G0>e?ezh3BA++?Glg+lhr3+e00ll?B>>?zzlaGeB+e0Bh.l+B?ezAhe3r30>kAl0?h.+0?l??3ze?+zBrhe0ra+00z>?hGeaehA0+>Bl?qAer..4e0rG._0Az0?+z+a+rz>GGelhh?ee3.AG+?Gl>?hA?r3.e>Ea.?vB>.?+r3e.eG.>0Bhh??zA+0r+LlBz33AG+>G?a8+AG?0+A>e+.A0+>0L>PllBh+BAahA,0z0h>aA.0z>eh.Bqahezr>3A.A0ll>??z3hGhGz0a0r>+3>A52hzBz3zAalrB>3?A3re..0_03Kzz3a>e0.l0B+..zGBlGh0Bh3ze?+lG+ChAzr+.0-llB?aGrh.3>.>03>eh.BVahez+>e+F.lGBB3aArB33TA3+l?azha{rh.zA0rh++?lhhhAzAalelr+BB3lA.rqGh+BdA0p0Yh>B>3haA>+hez?a3ee3Aa>e++0G.>3zGrd+jyalr?G>el0?r33aGrh.G?zhBh.e0A+e}r}0e>lha?++3+EF??Gz0AzrA.+r+rh.h*haAA0.>0?>3GGGG>0h0B.3reB.+..>hl?BlzeABr0??zea.eQ.h0z>A!hA03KA0+aGr&GGBGB>zhzBazG0Mlz?Az+a0rl.Bla.+h+?ea?e3+eA e3+Bhz>lhrBl3AA3+>lr?z>.?r3la+rz>_G.>.??Ba+zkcl0Ba3rAG3G3BArrr.r0.A>e0.A0+>0G04?>l?zaha+ArhBB33.A;+hAre?rh?.zlABra.r+GGm>?hzzeB.zal!3B+Bh+l+.0l?3ee?l+?>3?A3reA>A>+lGl-?>ez.3>Ale..?G+>ll0BAazHrl.Bh3zAAB>3eaAll+.B3.tze0h3.?z0GBG3Gez+AG+A0.>G+bzlar+.?k?l3?e>ul0?>z>.A.?+e04zBzlzeahe+h>B33eA.r/Ghxz1B^+z.aarB.a0r.a.a0zlhaea33GAG+.GB3eAA+lGBUaraGz,6llBl3z0r>h?hzzaABaz3a..h+0G0>lB.B03>+lraGG3>.+rA.+00>a0ldh>Ahaz+al+0+rG.l+heBAa?Ae<0>BBBzhr>aeA+raGl0e>GhGB0ehra.z0ezlzaea33A+r+G0z.?hBa3GArr3.eZ>z03BrB.z+l+0G+>la33haaeG+rG3Zeh>A0AeAOrzGz?+a3BBaI+++3.r0>>hhyB.a>.B>h>lFAlABaz;G3G?G+0GlzA?z.a.rG.G0l>?hAzBahe. 00h>+hhBGe++>ra.r}l?GBhz3.z00.+0h>zh.B.rAG3teGe>GlrA3a>elreGA00hB?BzeArr>Gh0e>Ghrz.a3e?M.0r>lh3AaeBe3+rlhh^z3azepeK+?.003>0zAB0ABGr+700>ehaAeAAe+rxG+)al3A+ra.r00l>zha.ha+l?r.BBGGa0>zA+aGG>>h?B33eA.3+eh^?>l?+z0Alzlz0aGeG.B00z3B3ze3Gee+zGBB+33Bla?A?+aGzE+lXaG.30.>1?hzzaAz+3>rl>lOBla?rzGA>r?h3GG?GzaAzrA.+rhrhGlZ3>0BGzBAhAG.BGr3Ga0+zGAj+GrG.JAl?BerGrzr0+G8a>G?0z>Al0A0AG.l>?lB.Ga8Gh>B?33Aer.ra+hl?h.z+a0rlaAaAre.e0+>lB?Bea>e0r_GG33a)r0GlfB.B.3%A>0?azGa+rz><>r>>?3+eG3>lhBBal3hA?AzKr?+>.hsrA>e+.A0+>00z0zl3?3zBahe.CAl+?0A.Aeae3ezeBe?e+A3A.a?zmhr03+hA0B>lr?>?l0B+30elBA3Aee+e.G0RlBB>z0AA>*?zzAa+e0.lhB+z0rBra>e?+3GeK.lj?hhzAzr+.0FllB?azrlB3>.>03>eh.BtahezGAe.Y.leBB3aArzG3lA>rG.z7?l>?B.?Gz>+h0zlhah0B.+G+e.hGe>>l0BA+hrGre.+?0?Y?zzBaa>r?>z?a3ee+.GfGB0zB33hA0+lGB+?+e.e0.l+?Kree3G0?>BaaAe++0A.eB.?0e^eh+3>3heBr.0+#G>G?B.e03ll?BzahA?.z+aa030lGa>Ge>e+GAE+l0?ah?hGz3a+r+.B0Ah.>.hA3l+hG>GrXBBBzhBAAr+>Gr>0l>lrrh.G0elz?Az+?z??B0a0ea.B00>a?l+a.GoDhhBzhzl.Bh3zAS+B.3?G?r?BzB.e+a.A0#a?A3++G0>lGG>hl33G3zA0eGwe rf0lBBBzrAr000eG<lzea+G0>>?h3Be3.a?ahG?0Al+?03lBhB33aAhre.l0a>Bh0z+e7e3+.G.O.z0+h.AjrlGB>luhz?zzAAar+lzl>>.h0rlrheA+aGr30AB+3GeF.GzGGm?lGA+a&A+r0la3GGG0hG3?lzBh.B.ahez+AG+i0hll>haAArBG>#?l3}aa+.zV?zz.A+e.e0GahA0+rGG>>.+0l-zha?G+hrGr?Gez.a3rB.a0r.r+000lzhzzae?rl.?0?,uA.rrGBialr5z0.>-?3AhAae+?>BGaAe++0A5e+.B0hleh+?+3hKa>a?%3hAzB033A>rA.>0szrzzB+Al030?GrOrheBl+A+z+G.c/aAze..Gn>l?0>D>lah+zBABe+>+Lr>Ahazhr>GGl0?.33Aer.ArAB+BG30sle?G.hGG>rhGz>h>h3zA3zel>h<>nrhh?r.L0rla?rzGh.?0B0az+e..ml>e??zaG.y>hBBa3rBBB?ahA,+B0A0Ghl?azza+rG+U0_>e?aBBG0bzh3Be3.BhB?3lA;r.G>>>3Bzler+-0>>zh?a3eh0A?Vez0+Blrazh+hGhVrlGB>>8lG?z3>Arl>lrzAa+e0BSAhA-.eGrkGh0Bha>eA0zl??3zlahe0+A0h>BhaBe3Kel+?GB_rl4a>AW+AG+J0.0G.>3h3BAz06l>+?ez.a73lzaAzr?+WGIhBhAzl3SA.hlBh3eA.rLABeBr+G3z.aarB.a0r..++Gi>aaeaea?ee.hGG3eAB+lGBRa.3GA0A>/3?zrA>r>.>hha3Az+00l>B0?0l rh_zl3reB.rG00elT?j33AhrG0B0z>+?>z>3Le?haBe3ceh+z3re3ra?sz+Aarr.Gerr0+0MAl>?3Br+?G?heBhaleB+aAAeArGG0 h?r?0a.Ah+B.l0Ga.Ge.B0a>rh?Vlh.3A3haaeG+rG3Yeh>A0eBGBVzlAz?a3BBa}+++i.rG0>3?Bz3Are.+A0h*rl0?0z6G3G.l.?G?e?azzaarG.?0>zzare>+?0lGhGh>ahrBB+?GAr...Bl3hz0z.are.Gh0A>zar+zGAee+e0r>rl0B>3zelrpGe?+l}BAzYArGA0G0B>ah0araKe?>hhzBeh+Bh3zA.r.>A?3ze?e3Gar03G>)l>e?AB0ABeB+e0r>>?hBe3GAr+.G3}?z.Br3lA30a0zOB>r?B3lAaeeGBhhlG?hB0arel+30l?rlrBr3.Ah0eG?}eh>B>zB++r>.b0r>A3r3xa0ee+alehehhBhz.+lrA.AYa>:aaA?A?rl.0>Z>3h3zz3GG3++Gz>.3eArrGG>xBl3zAA?A<.+00ll0a0A>+hP3Ga0r?.r{eu+h>B.3reBr+-e_+h?B33AAhGh.h0z>reG+e0z>Ah+>?>.l+3B3lArr.G0keAaee.=8hlzPz0.l>?+z+A>ez++0<_!hGBr30r..l.c,}lGBa.u0rla?rzG?0?azaal0.0e0>>>h*BaG.0zhBBa3r?eBAz0AA+zGa0G3hB+rAr?ee.PGAzazBzBaheE.lGaB.BeB>3>AWra.+zXaAra.r0G.G.lMllAhAzre?r?+003>+lG+?G3}A>.B>3?A33?a.e.GAlzeB0+?Gz?aG0a33+.>l3zAAr+;rleBh3zAA3Az9Azrz.zhaa+e?.?03>e.G0Ax+hB3+a3A3G>GalhBa?aa+Jl>.?ez.a}z+z3aBr?.G0B?hhAB0aek0l3B33eA.z+3Gel+B.h?0?eh-3z.r.z.l0?aBAG+.Gc>h.?.5B+lAB.z.e3r0GB0Azlal.aGG>X?hzz?zh^zza0ee>a>B,0l0e?Aleh+el&?>A?er.+00llG0Mh>h?.zBarA0>eca4=h0zB3Be3l.?.3BAarrABA?+h.n/BareB.h0z>AGAG0>.h,z?+rrz>>S+:lharr.?yhlz?AlA>.?.3?a?rzGe0l>.huBGaa,.hhBz3AA+r0Gl>BGA?AzzA>r?.3eBee.r0>ha?aB0aeTwlABa3rAG3G3lel+A.AHrh+?.zrAaeE+rzh3Ger+G0>+r+e0A>zhr33aBe3+3Ghz0ABra.r0Gl>??>o?eer++0h>zhA{A>zlaBgGz)hlGB>3?B?BA3>A?+>GB2zl>e.+z0B>ahr>l>l?hzha>A0+A00o.lB?%3e00lB?azraGr>.?+hBehrBaahez+AAOee.>G0BaBh?A30Xl>,?ez.a_B+rzrael+eGX>Fezr(GG>>h?6eHrl0?.z0e>r3l+l3>.Bh.B0r>G?>z?a3eee.e1>>l.BA3+A0z03>ehrr9lTLhlBlzG0r>a?hzzaAzrBe3Gez>aU?>Bhh+lG>Fel.?4l+l3?B3?AGrB?hzlareG.>e?rz+a0a>ll0+?GB-+l0BllhhhB3z?00>B?3zea.30A%r0Gzj?le?e3?a1re.e0e>Gh0z>rr,athlz?Azl>.?.zBAhre+e?>S.?zz>3AGaEehz8?lG?r3AAAfaG?}.l??0A.r>ee0?0?lB?Bz3arGe=+ha>el%B.+?AY+A.q%rzBzzz.Arez..0h>B3.alalr>.zGGl.h?zlz.e?rel0zalGBhz3A3r+.z0>zla?elear>rIh+?lalehAeeh+.G>B?l+BBz?.JrO.>uaz+?.3>a30a+B0.>la?a++>GrE,?AfeleBr3ra0r>.z4l>y?ee+a8rA+H0r?ABGBB3aA0GrG,v?3hA+3AaCrh.e0eBza?e3a3rr+ah?>Gh0B3azA+.lGl43ha?G3<A3rr.aFel??>eeAae0.?hB>a?az?a3Ae.>G?>3hlAhz0A?+hG.-hl.??3>aAr3.B0rBeh0zGaAe3QA>A>.hhzh3AeAGB.r>>za?.z3AG06>+h0zhaB+30l%+heB.3il0B33?eA+3hllalA?zzrA+llhzzea.e(a3>BBGa00GzlBBBnlaz.r.h?l?.3>+3lA+l?h3z+a0rlaGa0hea?rG>3a32zB+l03a+hBAh?.Gl33a+3?a.?0a>rhGz>a?33l?aheA++G0>lhBBa?hBGr0.?I3le?.>rlhBl3aaare0l0^>z?azAahAm.z0h>aAGrrGzMAl+0e00l:?zAlreG3l?zBaze.+s0h+9+.0r>aA0+BGa*rlGB>0??>3e.r03lh?zzA?Ah.z.A?e?.zve>,?l+BGh;.l;Bhl?l?BezeGl+0>BzA?ar>.?03WF.BG+#0hzBzrl.Uph0?>?laa_3Ba0+z.a0_l>?>eaarr3+rhh>G?hB3a0ez+0.Ghrh3B>3>+A..G3LGl+BzaVazr+Gl7B?h?Az?a?Ae.3WG>3lzABA+rrrG.G>a>.zBa0Ae+3+rG.30ee+r0l>Bhak0>Ahr?:GBkll.?}3h?.?rzAar+>.37Blze++>0?>3he6.>rl0ezAzeh+l.. Ah3?3z0a0x?%Gh>are3.h0z>AGA0+tth#zh3.+3r+Gr3Ba.r..i*h.e.exrlr?Az3A>0r0e0l>z?leAGrihhhBz3A?A?rz/AU+3.G?GhG?zzGaera+Gz>3reA++G0+eGz61l+3G3Aa0+B_e03h+A>el.A0+>00e0z>hhAA?.>?5e30A,0hAeh3ela3lee0Az3aee.0+>3??z3aezeBr30el.aGhB0Be?uazgalGB>3?A3re..+lGh??z?a+e0.le>eA+r0B>Gelr0GeU.lKPhc?leBBz.A.rl.BzA30r>.?03+z.aGa:0??Be3?G0G...>hha?Az.A0l??ez.a)rh.z0A>+h0Bc3Aea+rGGrG+?0zEhl0Br3>GzGlG3cl>0rh.h0r>G?>0>>3?ABzal>>ltBA3+A0z03ea0Gh.A!0A>r3.e0.>!?hzzhQz++.Gh>BhaBrh+hBBBz0GeG3.G0Gl.?Br+erG>2hhzaAeB.>0?>3Ge0>>0lez>33+BreGA3hAlrr.G)>G>Gl0+>A?rz>0?>?h+B0alB>Bvaze>++Blz.Aer..Dr.r3..paleh=a3A3eG.AB03?e3+eG.r++G.GfB?a?.a>A3rB.rC.>0?0zAA3e?hGB?azeA++eaA_.?0zlFhA?aAGABrr.}>.le?l3?0e>a?lzBaaz3zB3Gr>+aGa>AA.?a.lBrGBzG0a>>3A.A0el>??z3?G3GzGrB>?lGB+30ela?zGA3r+G+XBlAAeABar+>??zBa+e0.lear3.lG630?6+3GeD.+?a7GV.3u+zeGlz>+zeA.>A>zzh?3A3rez+>G3B?++e++eAl0l.A>.3aG?+?Gl0all?+rzahBAAGA2+e+z?rh?ea>?GA>h.ehel>Bzzzere..30hhrAl0G+.e>GzGa>l5GAhazhADH.+l>lh?.?A+G+U3?BB3Aa00T. (B>eee+a0l>Bha>ax0l0B0A(AB+??Gz+AzrA.+eAr.+.Y3>0?BBA0l_3heB.3_B+a>ABG+G?H.>+3az03AARrGl3ll>a?G+n0z>Ah+B0alTBBherj+l3B?33Aeze3.A>r..A0az0B.aGrB>AlGz>a?e3aaa>Ar+Ghzl.l.B+33GB.zGl0alZ?az?0a>>h8zhazhrB.aze?r0G0=3hABB3rAAr0?rzBAhrz.Aeaea..0q>eB+z+a3e0.?Gz3rAl+hGz{A.zGe0JlahGrrrze+Gl?3h?3+el+h>?hBB+30el3%3eAz+>?0zeA3re..r+rGGB:Bz+B.3>a+e++aB+3Ae?+3GerAr..GS33A3?zeAXlhh+zraGr>A>alea+r0r>Bhl3harehr.G}3zaGrGG>%?Gz.B0Al>AhABarea.z?l???lB_Gr>>h?B33eA.rbAB+zl3?3z0AlrBAlaAr..?00aBA++.GZ>hGhGe;3l.B03_rB+e.V0GBl?azGAA>Gh&zzaAe+a3aheBhz?33Ge>+?e?Ar+>G?WGhh?Br+rar..a0Bzrzazlal03GB0z>.Ax+zGA}+l0Bl3Bh03r.+GBl??3zelBh+B0azezSllWBhhlB03AeBr+G>?Al.Ba3laG03.3Or>z?+z+Ahe0.eBGa?e3+eG.TihhBzhAAer?Gl*Bla0000l*?s3laa+A.3G0>e??+e.o>lhBBal0l0BC3HelranlWr>ezHz3Arrl..0lazAr+G0>>?0?GG>?lv?{ele?rAG+w.l3B?3ea5e..>zB3re.+=0h.B+30hO+h.eBeBAAr0.G)>la??3aaGl>hBzAa+e0azazr3.3>r>lhzz>a>ezrrG>>BlBBhzxA?lhhGzraGr>a+aGez.r0>{r3rz?3AA0lL>z3aArrGAhABrhGBhhz8zezq.Aeh+oG.zBhaB0a.Aa>?.^>>lABa+hA3rBG?*e>%ABzaAze0.>0all3Ge.3+er.>hA>ehGB?+BAz+e.eF+3??Gz3..ee.G0?4#a+z3aAeG+%l.3+Ae+?G3Re+3.GW?lAz3ABr.>FhrzaareGaRAm+h0A>ehBah3GA?+el.?03BAarrelA0Gz?Bz?a.e*.hezr?+ah0hrhz+zGl8Gh>B?l+hB??3eA>+B.+c3>+e0.B0a>rhGz>a?zGaeGrTzhhBz3A?A?pz.Ah+BGz>rlu?zz?0ac3h<zhazBzB.3ee?.>halzBBe>elaGG5l.>elGhG3aaDrz+ehhBheA+z0>>?h3)l>ahlB?+z+>r3G.zLa!ra.r0G...B0a>ahe+.0h>zhAB+30+lBGeaHAl?B>3?A33AzrA.rG.>0zz+BAa?eG>zlhBGa>e?3a3GeA/700x3lI?:3eaGbB0?0+>3?+zl.3.z.a0e>GhaBza36.laBB3aAr3+3XAz+z.+q+zWzrz>A3>ehazlaBea3BaAeGrRGa7azrrG.0LzlA?+>rl.h.z?0AG.?>z?a3B?za3arl+eGTX?z.a.+B+Br+G>w?>0?A3>aAe3lhhAzA??Br3GeB+Bl>?03lB<3GA3+eG>s>hlar3BAa0hGVhzhlzrzXr0+?.lBr3leh+zGArereG,0E3azAz0A0ra.a0lz.BeA00?>hh+B0alzl3+el+AGh0Y3Ba0r..-Ch.z.3n3ll?AB%ar0r0e>+l+eBr.G.ithhw?>?l0Be3Beh+h.Al?ll?rzAa3>rh3zhazeA333+e.+h60oGh.Be30-BlB?.zRAhz33zA3rG.?zh3ler+G0>.l.z03>lhAB>33A?rGGr>GlhB3z.arr>Gh0BlBh0z.3e>hhAB+.0rA>rhB>rG.?0z+A3re..rere.eq?hG?GzBaV>zh?BGa>e?333Ge+r3GGw?lzre.?{llB?a>alAh0BGAlea>.0?>ehhBBGeSzhlBB3aBe?rz.Al+z.G?.>eal.?G.>+h0zllG?3zl3e+r+BGBh3hBB333ell3?Az0AlrBa?a+eGh0Bra3ee+.A.er+.GBB+BhBhalA.la?G3>A?33e3+ehB7?z?aBe++00l+0+AG.xeAo+?GB:ll.?#3h?h??3earrA.>0+lze++30?>3he>>>>?lzla?AeGr0>1>h3rA.et>l??3>+>Gh+zG0?S0h+B0alBlB03GAG+BG0B3?3?.z3->>+?Az+a0zg3?ae0r0z0{>3hezB3rVG>rBz3AA+zAzeAOeGGz?G?Ah03B.e.r+3?h?l??B?+0r0+eG0>AhBB.3r_Bla?.z7Ahz.3S0eGa?lzBaazazzlGBe.?hehe..llahGA+ezGra0??errr>hbaA+G>za.ala+BhAAGhB0?+?H30Gr.azTre.+a+r.+h0elz>Gl3hzrleABBArhG?3a?B+aBA?lGh)3zAAr+Are>e+JG?r+el>3haArh>.0?elG+l?3hG>F?l33B*>lB?azraGr>a?B>r>+.0A>+h0OG> lbB3elej.l0loGArr?Gh8zlAvA0.l.B?z?Az.+++G;>hhrB0GG10hzBA3+lrz>3lA.la?G3>A?r3.e>.r>2hz?a?e++00lrX0?0l>>z0+lGhDel.?clehh?ezG0+ll?BzaareG^>al.3h33+Yza0>aellrBB>h3haerr.GK>+_Gl0l>ABaAlaeeP.B0>>Bh^Be33}+00B?33Aerh3aa0rl.A0ABBahezA3r3+rhh>ahlzA3reh+?G??rlGBezG.z+>Gz0ehl?A3la>.G.e0?>?z+3ze3+++lG+>h?3B.3lr3+B.?zzA>rz.A0+>0h#B0aaer+Geaez+>0>jAhr+>+0EAl+?0l3h??0z3aArhl?l>>ahaz3300z03GLb/leeBelAArAGa0(ABe%..08lh0l0?>e?.zh.B++.lGe>+elr.GeX.l7Gh5eha?hr0AG+?+0h>zGe0+.03>eh.>+>GhhBB3eAYrABh3zArrGG>+l.E?azhaVrh.zeGr3+z?lhll0Ba3ee++3BB3lA.r:GhrGrL.e0e3lz.zhAA3lh+z?a3ee%?G,>hhzBa3+A0+l.h0Alr?G3>lAr3.e0.PGlrzzaAe+Br0l>BhahB3Ae>+?G3O?l.?03haArA.aGlll?BzaaBeG+d0?>3.0B.3{eh+BGAC+l0h_r.Aarr.G+?l??3ze3r0h.h0B>AlzB0aleBeaGAkGl!B?3zAeza.}0>>3?AzAa0Gl.B0a>rhG?aa?ez+eGe*4hhBz3Aalr0GlFBla?rz+A>r?r.0e>.hdzlaze3++..0+hBB33raa+>G?=3Me?>z,Alrz.a0+l+?l?B3.er+.0>>hh3lz3.aGrBGzg3l+r>3lABrarr0?l>?lz3aae.zA0hK?llB+3+ellBGa)rlGB>BaA3ra..0Glh??zAz+e>.l0l>aheBGare?rBGA}.lrBh+zAAr+.0WldJ?azaaGe+.?0B>el.Bzahe?+AB0*0l0BBzz.?rG.Gc?aA?ez.a<Ah+G0A>Ah0B0aB?>+r.+F.h?Bh3e.lrtGh{zlAh5z0a0rB.z0r>+?>BlzIee+AG18AhBBA3+30eHGBp?lr?e3>l.r3+aGe>bhGzzBze++00lShe>Br3ae>>eG3cel.hGB+Azrl.+0+ll?Bza3AAA.>G+>3a%B.3Veh+z.zq+lrBlz.AarA.G0>lh?3z3a.lG.h0l>Ale?5ale>+aG>#.h>B?B3Alr..+*hll?A6Ba0A5A?0a>zhGB>a?e3+e.rzBhh?&3A0lr0GlpB>zh+zGaer?.l0A>.h%B>3?eA+?G0zahBBa3rAGe.G?Uhle?BzWA>rz+A0>>0h0zB?zer+e0>G?lQBe3eA!.hGz.zl+h.z0ABr?.rarl>??z3zeez+0G0>zhBB+ezelrhGz-rlAB>+eA3re..GG>??zzha+PB.l0B>alA?0a>A.+3hj<.lQBh3zAhr+.rKl>G?azAaGe>r003>3h.>hahel+A.+0rhlBl3a!GrG.0j?>Bahz.a+rhha0A>+h0?lz.ea+3GG7.h?G=3earreGh_>lA++z0AlrB.aG?>Gh.z?aBee+rGb2>lIBA33A0raG?MalrlGzGA?rl.e0a>D.+zz33Ah+0G+>Be?Br3Ge>rl?cxelz?<+AAzrA.+G.>h?BB(arh>.>0?>3la?+3wAe+zh0%+l0Bl3Baarr.Ab>>r?3zaa.Ab+h0z>Bh+..alAM+a.A)ah>?033adr+.tmhmz?hz+aerl+Q0ar?hG?0B.e3+?G.zzhhBz3AaeelGl0Glae>zGA>r?+BG?>.hazh.+eA++G00Dl?Ba3lAG>3G?93le?.z.Ahr>.A0h>0hfzB3ae?+GG.>?0BBe3aApAh.z5Ala?00aABBa.rGG>A??zhae>;+WGp>zl3AB30A.+B?e&rlGB>B?A?re.a02>G?zRla+A.+?0B>lhrBa35e?+3Geoll7?G3zA3r+..Ol>hlrzraar>+e0z>eh.h53>ez+hG+PAhlGG3aaAe+G>0.l3?Bz+a7rh+?zl>+h3zl.rea+rGG00l.B33>A.30GhHzlAheB3Aler.aB>>G?>z?a3A>+.Ge>hl+BA3eA0rl.AWalz?GG0A?r>.eGry3?hBUaAel+G0l>B>a?r3GAr+?G>He+z?Fz>BBrA.B00aG?BzaarA+a90?y0herh3*eh+z.3+rl0?A3BGGrr.Gk>>llhzeaheHlA0z>Ah+B03AeB+lGrf?h>Bl33aeea.J0Glz_3z+aArleB0?>rhAz>A+e3B>G..Vl>Bz3?A+z?GlA?lahAzrA>eG.3hB>.hWzhzzAz++GA>ll0Baa>AGe>zpj3l??.zeAhGe.AG+!a?lBfaar>+GGr>?lBB>3.Ae+h3hZAl+?0BlaAra.B0G>r??aGaeAr+a0hZ0hABh3Gel+B.z0llG?A3?aGrA..0{>>h0zAahe0+A0?>ahrBG3Ae?+>Ge8?lyB>3zaAel.00.lBGhzraar>e?G.>ehaB&Ahez?+G+00>GBB3hArh>G>C>l3haeza_e..zBr>+h0zlzBa++rGa>>lGB3>hA.eG+tdzll?+zAA>rB.a0ru.?>BGa3ea+.GG>hl??A3+Aa+l.r&3lr?GB>3+r3.h0.>A?h00aAAerz0l^.haBz3.e>+?.B3hl.?33hG+rA.+007(?>zaa>eGa:0?>3he?r3+ehrrGAzll0Bl3BAae..G0el?h+zearej+hG.>AhzB00weB+>Gr0+lGB?zIAerh.0ChlzlABla0er.B0>>r.3z>3lzz+eGBq}A0Bz3AA+e.e>8B>0?r+?A>r?.3Ga.+hiBAazza++G0>llhh?3rAh+>heS3le?.zUa0rz.l0+>??lzhaaAr+?0>EGh3>a3.AA+hrz0Gl+?A3le.rae>0G0>hlz3a?e.3B0heBhA?e3>elrGGa?zlGB>3?33rl..0Alhh0zAAle0rla>>ah?BG3ee?GaGe0.lABhzHAA+l.00rlBhzB3aGee.?a?>eh.BvzhA?+AGB/0lrBBA0Are++._?>0?el.agrh.zG3>3h0BAaBza+rGG>>ll?l3eAhrsehgzlA?+z03arB.>0r>??>zla3Ae+?GW,.hz0?3+Aa+lrB0elr?a3>e?r3B.0.I7l0zzahe+?l0l>lha?A+ce>r.G30+l.?(3ha?eB.+03lll#zaareG.>Gl>3hhB.3Geh+BGA.+l>Blz0Aa.h.GBml?hBB+a.eA.hGa>Ah+B0z1Al+aGhJGB5B?33Aer..0)h>0?Azea0r>.BGzPrhGBea?le+eG.I5l>Bh3AA?r0ra_Bla?rB+a3r?+G0eAuh8zhazeBA+G0^rhBe+3rA.+>+?0.le?lz6ayrzGA0+00hzzB3.er+h0>>>h3?ez>A%rLGz>Al+??3l3BA_.r0hl>h0z3.ze.eRG+>zlGB+3?el+lGa0rl?B>z0A3Xz..0Blhlzz3a+e?.lG0>aa3BGz>A.+3.0v.lBBh3hAAe+3a8l>0?ar3aGez.?.3brh.BBahel+AabR0>lhr3aa#rG.zT?l??eB.a+rh.l0ArUh0B3aBAzreGGZzh??A3eA.r-.>G+lAhTz0a0rB.a0r>GlGz?3+ee+rGy>lhzBB?BA0rrGBz+lr?.3>3?>A.e0z>(hVzz3?er+0Ah>Bh>Br3+e>+hG30a>B?^z+Azeh.+00lllBBeare3.>G.>3?3B.B_ar+zGl*+laBl?>AaAr+3O>>+?3zha.re.hG?0Gh+BBal0B+aGrwGh>B>33Alr..z)hl??ABe.3rl++0a3.hGz>a?a3?lG.:3hh?.3AhBr0+<0ela?>zG0>r?.30e>.h+zh3.eA+eG0LDhB?az?AGraG?3ele?BzFzhel.A0h>0.AzBa.er+arA>?l.Beh3A%+lGzIal+?0aaABra.r0Bl>??z3a?3B+kGa>zhzB+3Gel+?Ga8r??B>3?A3r>..0Xlh?zmAa+eh.lGe>ahrBGz0A0+3..&.e>Bh3zAAee.hDl>3?az>a.r>.?.3X?h.BlahAa+AaBT0>=ha3aa+rGle2?l3?eBr3.rh+z0A3lh0zlaBAzrZGG0wh?la3eA.rq.>vllAhez0GarB.a0r>Glrz?3AeerrG5>hhzBAzhA0rzGB_alr?+3>A?r?.eGi>ghAzzaAe+r..e>BleBrzeA1+?G3Gel3?fz?Azrl.+G5ll?BzlarAs.>Gz>3lrB.zG.0+z.eE+lBB>3BAaAr+.*>>B?3Bra.?A.hG?4Bh+?0al?3+aGrHG>0h.33aAr.hzShlz?ABeazrl+h0aG+hGz>a?ABrrG.0.hhe+3AA+r0GlGGlah+zG3Gr?.30e>.z0zh3AeA++G0MWhBBa>rAGrhG?0.le?.zPa>e..AG.>0+^zBaaerr+.+>?l3Be3hA0+hGzGA>.?0zlABea.rA3l>hlzlaeA++^+?>zhAB+z.Al+B.zCra?B>3?A3ea+30Qpm?zl.a+e0.lGh.3hr?ea>0e+3Ge .lTrl3zaAr++rCllB?azrr.r>+z03>eh.BGahezzAG+0Phl?r3aArrG+00rl3hez.G+rh.z0Awelkzl3?ea+>G.>>h?h3B0A.e0Gh0BlAGBz03#A..aGA>G>lz?a3eerr.+>hlhBA.lA0+lGB0z>M?GB.A?3+.e0.>kh>lBaAA3+0?a>BhaBr3G0m+?.z1e>a?Y3hAzrA{r00>h?Bzaare+.>0?r3he?.37AA+zGAb+>.hG3Ba3rr.e0vl??3Ba3+eH+>0zY0hrB0alaBr?Gr0+h>?l33hhr.+G0zlzhzz+BTrl.B0a<Alez>zZe3>/G.bihh??z+A+eeGl.Gla?rzG30e .3G?>.AzzhazeA++.l>llhBazBAG+>G?:3la?.B5Ahrz.A0e>0?lBaaaAe+GG3>?h3BezrA3+h.?dAAB?03lABAa+A0GfG??B}ae?e+R0h0+hA?e30a_+B.Bqr>+a.3?a?re.h00lh?z?A30e0r00BZBhr03a>Alr?Ge0Al-l?3zAAr++.GBlBhhzrG?r>.?03_al0BJz.ezr+GrY0hl?h3lAre3G>Bel3?ez.ate+.zGz>+lazlaBea+r>.>>lhB33eA.rGGh0?3>?+B.Ale..30r>Gl>Bea3Aa+..G>haeBA3zz3+l.l)a.e?GzmA?rz.e0.hz?hzzaAeh+00l>Bha.>3Ga0+?GB!el+?Sz>.GrA+e00>e??zaaraG+30?SBhe?r3J03+zGh.?l0h03Baarr..y>lh?3zeehe/.h0zcrh+B0aleBhGGr0+h>Bl33AAr.+G?rlzh3z+a3r>.B0a0rh?z>3le3raG.z?hh?u?>A+e+Glr.la?ezGa0r?.3my>.hozh33eA++G0>l?rBa3rAGr>G?,3le?.>>Ahe?.A0e>0?>zB3zez+G.0>?l>Be3.AdehG?^A>e?0BiAB+B.r.G>+??BBaeAr+9r0>z>ABl30a0+B.zUrhaB>zl3ere+a0L3h?zzAa+e0ra0ByBhr?Aa>el+3.aGhluh03z0rr+.0DlWBl.zr3er>rv03rhh.?Ga>ezr?G+z0hlBB3aArr3G>G,l3?az.aGrhez0l>+lrzl>+ea+dGGv>lGB3zzA.hhGh0hlAheBzAlAg.aB.>G?>z?z3a0+..r>hl>BA>BA0eo.hSa>B?GzrAhr3.e0.r3?hB>aAee+0G&>BlahG3Ga++?Beqe>A?cz>3.rA+z00>a??zaaraGrB0?Z>he?33Ph++z.3{?l0hr3BB3rr.Gy>>ll+ze3Be!lA0z>Ah+?.33eBe0GrFrh>B?33aaer.=GAlzA0z+a0rl.B.G>rlaz>zee3+aG.0u>eBzz?A+h.GlG0lahAzaA>AG.3GM>+hqzhzza.++.A>l>0Ba>?AGe0+3}3>h?.B>Ahrz.AGe>h?l?.aa!>+G0>>?lB>A3.a3+hGhjAl+?0B%3>ra+>0G33??z3aee.++0h0)hA?l30A{+B.aXalGh+3?BBre+30D0hl.zA33e0Ge0Bl0hrlGzae?rlGerll8Gl3za3r>.0G+lBahzraGr>r?.e>el3B#z.ez+0G+G0rGBBzlAreaG>hal3heBaa AG.z00>+lAzl3heh+r.a>>+>B33eA.
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Parent = player:WaitForChild("PlayerGui")
+
+-- Táº¡o Frame chĂ­nh
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.3, 0, 0.1, 0)
+frame.Position = UDim2.new(0.65, 0, 0.8, 0) -- Äiá»u chá»‰nh vá»‹ trĂ­ theo áº£nh
+frame.BackgroundTransparency = 0.3
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.Parent = gui
+
+-- Táº¡o ImageLabel (áº£nh mĂ¨o)
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(0.2, 0, 1, 0)
+imageLabel.Position = UDim2.new(0, 0, 0, 0)
+imageLabel.Image = "rbxassetid://79092334123520" -- Thay báº±ng ID áº£nh cá»§a báº¡n
+imageLabel.Parent = frame
+
+-- Táº¡o TextLabel (TĂªn)
+local nameLabel = Instance.new("TextLabel")
+nameLabel.Size = UDim2.new(0.8, 0, 0.5, 0)
+nameLabel.Position = UDim2.new(0.2, 0, 0, 0)
+nameLabel.Text = "Vexalix Update"
+nameLabel.TextScaled = true
+nameLabel.Font = Enum.Font.SourceSansBold
+nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameLabel.BackgroundTransparency = 1
+nameLabel.Parent = frame
+
+-- Táº¡o TextLabel (Tráº¡ng thĂ¡i loading)
+local statusLabel = Instance.new("TextLabel")
+statusLabel.Size = UDim2.new(0.8, 0, 0.5, 0)
+statusLabel.Position = UDim2.new(0.2, 0, 0.5, 0)
+statusLabel.Text = "Loading..."
+statusLabel.TextScaled = true
+statusLabel.Font = Enum.Font.SourceSans
+statusLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+statusLabel.BackgroundTransparency = 1
+statusLabel.Parent = frame
+
+-- Hiá»‡u á»©ng Ä‘á»•i tá»« "Loading..." sang "Loading Done!"
+wait(3)
+statusLabel.Text = "Loading Done!"
+
+-- Hiá»‡u á»©ng biáº¿n máº¥t dáº§n
+wait(2) -- Äá»£i 2 giĂ¢y trÆ°á»›c khi biáº¿n máº¥t
+for i = 1, 10 do
+    frame.BackgroundTransparency = frame.BackgroundTransparency + 0.1
+    nameLabel.TextTransparency = nameLabel.TextTransparency + 0.1
+    statusLabel.TextTransparency = statusLabel.TextTransparency + 0.1
+    imageLabel.ImageTransparency = imageLabel.ImageTransparency + 0.1
+    wait(0.1)
+end
+
+frame:Destroy() -- XĂ³a UI khá»i mĂ n hĂ¬nh
+
+shared.LoaderTitle = "WELCOME TO Vexalix";
+shared.LoaderKeyFrames = {
+    [1] = {
+        1,
+        10
+    },
+    [2] = {
+        2,
+        30
+    },
+    [3] = {
+        3,
+        60
+    },
+    [4] = {
+        2,
+        100
+    }
+};
+local v2 = {
+    LoaderData = {
+        Name = shared.LoaderTitle or "A Loader",
+        Colors = shared.LoaderColors or {
+            Main = Color3.fromRGB(0, 0, 0),
+            Topic = Color3.fromRGB(200, 200, 200),
+            Title = Color3.fromRGB(255, 255, 255),
+            LoaderBackground = Color3.fromRGB(40, 40, 40),
+            LoaderSplash = Color3.fromRGB(0, 191, 255)
+        }
+    },
+    Keyframes = shared.LoaderKeyFrames or {
+        [1] = {
+            1,
+            10
+        },
+        [2] = {
+            2,
+            30
+        },
+        [3] = {
+            3,
+            60
+        },
+        [4] = {
+            2,
+            100
+        }
+    }
+};
+local v3 = {
+    [1] = "",
+    [2] = "",
+    [3] = "",
+    [4] = ""
+};
+function TweenObject(v178, v179, v180)
+    game.TweenService:Create(v178, TweenInfo.new(v179, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), v180):Play();
+end
+function CreateObject(v181, v182)
+    local v183 = Instance.new(v181);
+    local v184;
+    for v416, v417 in pairs(v182) do
+        if (v416 ~= "Parent") then
+            v183[v416] = v417;
+        else
+            v184 = v417;
+        end
+    end
+    v183.Parent = v184;
+    return v183;
+end
+local function v4(v186, v187)
+    local v188 = Instance.new("UICorner");
+    v188.CornerRadius = UDim.new(0, v186);
+    v188.Parent = v187;
+end
+local v5 = CreateObject("ScreenGui", {
+    Name = "Core",
+    Parent = game.CoreGui
+});
+local v6 = CreateObject("Frame", {
+    Name = "Main",
+    Parent = v5,
+    BackgroundColor3 = v2.LoaderData.Colors.Main,
+    BorderSizePixel = 0,
+    ClipsDescendants = true,
+    Position = UDim2.new(0.5, 0, 0.5, 0),
+    AnchorPoint = Vector2.new(0.5, 0.5),
+    Size = UDim2.new(0, 0, 0, 0)
+});
+v4(12, v6);
+local v7 = CreateObject("ImageLabel", {
+    Name = "UserImage",
+    Parent = v6,
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://79092334123520",
+    Position = UDim2.new(0, 15, 0, 10),
+    Size = UDim2.new(0, 50, 0, 50)
+});
+v4(25, v7);
+local v8 = CreateObject("TextLabel", {
+    Name = "UserName",
+    Parent = v6,
+    BackgroundTransparency = 1,
+    Text = "Vexalix",
+    Position = UDim2.new(0, 75, 0, 10),
+    Size = UDim2.new(0, 200, 0, 50),
+    Font = Enum.Font.GothamBold,
+    TextColor3 = v2.LoaderData.Colors.Title,
+    TextSize = 14,
+    TextXAlignment = Enum.TextXAlignment.Left
+});
+local v9 = CreateObject("TextLabel", {
+    Name = "Top",
+    TextTransparency = 1,
+    Parent = v6,
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0, 30, 0, 70),
+    Size = UDim2.new(0, 301, 0, 20),
+    Font = Enum.Font.Gotham,
+    Text = "Loader",
+    TextColor3 = v2.LoaderData.Colors.Topic,
+    TextSize = 10,
+    TextXAlignment = Enum.TextXAlignment.Left
+});
+local v10 = CreateObject("TextLabel", {
+    Name = "Title",
+    Parent = v6,
+    TextTransparency = 1,
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0, 30, 0, 90),
+    Size = UDim2.new(0, 301, 0, 46),
+    Font = Enum.Font.Gotham,
+    RichText = true,
+    Text = "<b>" .. v2.LoaderData.Name .. "</b>",
+    TextColor3 = v2.LoaderData.Colors.Title,
+    TextSize = 14,
+    TextXAlignment = Enum.TextXAlignment.Left
+});
+local v11 = CreateObject("Frame", {
+    Name = "BG",
+    Parent = v6,
+    AnchorPoint = Vector2.new(0.5, 0),
+    BackgroundTransparency = 1,
+    BackgroundColor3 = v2.LoaderData.Colors.LoaderBackground,
+    BorderSizePixel = 0,
+    Position = UDim2.new(0.5, 0, 0, 70),
+    Size = UDim2.new(0.8500000238418579, 0, 0, 24)
+});
+v4(8, v11);
+local v12 = CreateObject("Frame", {
+    Name = "Progress",
+    Parent = v11,
+    BackgroundColor3 = v2.LoaderData.Colors.LoaderSplash,
+    BackgroundTransparency = 1,
+    BorderSizePixel = 0,
+    Size = UDim2.new(0, 0, 0, 24)
+});
+v4(8, v12);
+local v13 = CreateObject("TextLabel", {
+    Name = "StepLabel",
+    Parent = v6,
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0.5, 0, 1, - 25),
+    Size = UDim2.new(1, - 20, 0, 20),
+    Font = Enum.Font.Gotham,
+    Text = "",
+    TextColor3 = v2.LoaderData.Colors.Topic,
+    TextSize = 14,
+    TextXAlignment = Enum.TextXAlignment.Center,
+    AnchorPoint = Vector2.new(0.5, 0.5)
+});
+function UpdateStepText(v191)
+    v13.Text = v3[v191] or "" ;
+end
+function UpdatePercentage(v193, v194)
+    TweenObject(v12, 0.5, {
+        Size = UDim2.new(v193 / 100, 0, 0, 24)
+    });
+    UpdateStepText(v194);
+end
+TweenObject(v6, 0.25, {
+    Size = UDim2.new(0, 346, 0, 121)
+});
+wait();
+TweenObject(v9, 0.5, {
+    TextTransparency = 0
+});
+TweenObject(v10, 0.5, {
+    TextTransparency = 0
+});
+TweenObject(v11, 0.5, {
+    BackgroundTransparency = 0
+});
+TweenObject(v12, 0.5, {
+    BackgroundTransparency = 0
+});
+for v195, v196 in pairs(v2.Keyframes) do
+    wait(v196[1]);
+    UpdatePercentage(v196[2], v195);
+end
+UpdatePercentage(100, 4);
+TweenObject(v9, 0.5, {
+    TextTransparency = 1
+});
+TweenObject(v10, 0.5, {
+    TextTransparency = 1
+});
+TweenObject(v11, 0.5, {
+    BackgroundTransparency = 1
+});
+TweenObject(v12, 0.5, {
+    BackgroundTransparency = 1
+});
+wait(0.5);
+TweenObject(v6, 0.25, {
+    Size = UDim2.new(0, 0, 0, 0)
+});
+wait(0.25);
+v5:Destroy();
+
+
+local Window = Rayfield:CreateWindow({
+   Name = "Vexalix",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Welcome To Vexalix :)",
+   LoadingSubtitle = "by vexalix25",
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Vexalix25"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Vexalix",
+      Subtitle = "Key System",
+      Note = "ChĂºc CĂ¡c báº¡n Má»™t NgĂ y Vui Váº». =) Key LĂ  : key", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"key"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+local function getLocalTime(offset)
+    return os.date("!%Y-%m-%d %H:%M:%S", os.time() + offset * 3600)
+end
+
+local label15 = Tab:CreateLabel("Vietnam Time: " .. getLocalTime(7))
+
+local Button = Tab:CreateButton({
+   Name = "Ban Hammer",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRbx/BanHammer/refs/heads/main/Rbx.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "touch Mouse",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Fakemouse/refs/heads/main/Mouse"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "Motiona V0.0.3",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BeemTZy/Motiona/refs/heads/main/source.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Textbox Execute",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/execute/refs/heads/main/vexalix25"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Lá»­a PhĂ¡t SĂ¡ng",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fire/refs/heads/main/phatsang"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "0101 PhĂ¡t SĂ¡ng",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/020/refs/heads/main/0101Light"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Sound UI By: Vexalix25",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Sound/refs/heads/main/Sound"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Click",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Autoclick-/refs/heads/main/Auto"))()
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+   Name = "Auto Anti Afk",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Antiafk/refs/heads/main/Antiafk"))()
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Server list",
+   Callback = function()
+   loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Hitbox+esp",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Hitboxesp/refs/heads/main/.github/workflows/blank"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Just A Script",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/UniversalScript/Ikura/StopExploting", true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "IY",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shader",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/randomstring0/pshade-ultimate/refs/heads/main/src/cd.lua'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "reduce graphics",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/fixlag/refs/heads/main/Fixlag"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Jerk Off đŸ¥µ",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Simple Spy",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+local RemoteSpy = loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
+RemoteSpy:Start()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Premium DEX",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pawslurr/Premium-Dex-V1/refs/heads/main/Dex%20Premium"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Shit Lock",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Truongthanhden23023/Shitlock/refs/heads/main/Shit%20lock"))("Spider Script")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Delta Keyboard Crack",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Invisible",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Stream Sniper",
+   Callback = function()
+   -- The function that takes
